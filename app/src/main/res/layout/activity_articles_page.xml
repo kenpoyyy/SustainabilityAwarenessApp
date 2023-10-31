@@ -70,7 +70,7 @@
         android:layout_marginTop="29dp"
         android:layout_marginEnd="79dp"
         android:background="@drawable/greenoutlinebutton"
-        android:text="Youth and Sustainability:\nNurturing a Generation of Eco-conscious Citizens"
+        android:text="Renewable energy and sustainability"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView22" />
@@ -83,7 +83,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="79dp"
         android:background="@drawable/greenoutlinebutton"
-        android:text="The Importance of Sustainability Awareness"
+        android:text="What is sustainable fashion?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button9" />
@@ -96,7 +96,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="79dp"
         android:background="@drawable/greenoutlinebutton"
-        android:text="Corporate Sustainability Initiatives:\nA Driving Force for Environmental Awareness"
+        android:text="Conservation of biodiversity in the genomics era"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button12" />
