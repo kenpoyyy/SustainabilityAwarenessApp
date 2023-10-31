@@ -3,6 +3,7 @@
 *NOTE*
 - Activities(Pages) ARE NOT LINKED YET!
 - Please update your file before editing to prevent clashing (Top Nav Bar -> Git -> Update Project)
+- LEt me know if there's any issues
 
 ---------- **!!!CHANGE LOG!!!** ----------
 - Activity 1 is done.
