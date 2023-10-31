@@ -14,7 +14,7 @@ public class Article1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_article1);
+        setContentView(R.layout.article1);
 
         article1Content = findViewById(R.id.article1content);
         article1Citation = findViewById(R.id.article1citation);

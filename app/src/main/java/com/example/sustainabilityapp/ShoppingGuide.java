@@ -9,6 +9,6 @@ public class ShoppingGuide extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_shopping_guide);
+        setContentView(R.layout.shopping_guide);
     }
 }

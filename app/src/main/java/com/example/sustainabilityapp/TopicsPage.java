@@ -9,6 +9,6 @@ public class TopicsPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_topics_page);
+        setContentView(R.layout.topics_page);
     }
 }

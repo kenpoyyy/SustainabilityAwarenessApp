@@ -9,6 +9,6 @@ public class EducationalContentPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_educational_content_page);
+        setContentView(R.layout.educational_content_page);
     }
 }

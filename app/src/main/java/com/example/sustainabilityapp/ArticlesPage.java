@@ -9,6 +9,6 @@ public class ArticlesPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_articles_page);
+        setContentView(R.layout.articles_page);
     }
 }
