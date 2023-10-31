@@ -1,6 +1,9 @@
 # SustainabilityAwarenessApp
 
-PAGES NOT DONE:
+*NOTE*
+Activities(Pages) ARE NOT LINKED YET!!!
+
+ACTIVITIES(PAGES) NOT DONE:
 
 Events 2:
 Reason: 
