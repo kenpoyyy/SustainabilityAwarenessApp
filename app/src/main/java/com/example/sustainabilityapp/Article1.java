@@ -29,7 +29,8 @@ public class Article1 extends AppCompatActivity {
                 "\n" +
                 "In the long term, the adoption of \"renewable energy\" appears inevitable. However, it will require substantial effort, meticulous planning, and will not come without its share of difficulties.";
 
-        String citation = "Ray, P. Renewable energy and sustainability." + "\n\n" + "Clean Techn Environ Policy 21, 1517–1533 (2019)." + "\n\n" + "https://doi.org/10.1007/s10098-019-01739-4" + "\n";
+        String citation = "Ray, P. Renewable energy and sustainability. Clean Techn Environ Policy 21, 1517–1533 (2019)."
+                + "\n\n" + "https://doi.org/10.1007/s10098-019-01739-4" + "\n";
 
         /* Method calling */
         article1Content.setText(content);
