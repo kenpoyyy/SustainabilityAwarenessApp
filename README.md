@@ -11,6 +11,7 @@
 
 ---------- **!!!TODO!!!** ----------
 - All text to be put in JAVA file not in xml.
+- Disposal and Recycling Guidelines
 
 ---------- **!!!NOT DONE!!!** ----------
 
@@ -18,13 +19,6 @@ FUNCTIONS:
 - Login Page & Register Page (Needs Firebase)
 
 ACTIVITIES(PAGES):
-
-**Articles:**
-- Not done with UI
-
-**Disposal and Recycling Guidelines:**
-Reason:
-- Not done with UI.
 
 **Events 2:**
 Reason: 
