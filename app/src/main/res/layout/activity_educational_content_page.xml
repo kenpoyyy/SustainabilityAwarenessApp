@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EducationalContentPage">
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="482dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="-200dp"
+        android:layout_marginBottom="456dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ellipse_1" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="106dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="153dp"
+        android:text="Materials"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backbtn" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="289dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="Discover a wealth of sustainability resources, from articles to guides. Dive in and explore the tools to make a positive impact."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="20dp"
+        android:text="Topics"
+        android:background="@drawable/greenoutlinebutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button6"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="49dp"
+        android:text="Articles"
+        android:background="@drawable/greenoutlinebutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button7"
+        android:layout_width="313dp"
+        android:layout_height="197dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="49dp"
+        android:background="@drawable/greenoutlinebutton"
+        android:text="Disposal and Recycling Guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="482dp"
+        android:layout_height="298dp"
+        android:layout_marginTop="4dp"
+        android:rotation="180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7"
+        app:srcCompat="@drawable/ellipse_1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

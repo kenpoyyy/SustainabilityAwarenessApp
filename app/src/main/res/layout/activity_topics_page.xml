@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TopicsPage">
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="302dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="-70dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/horline" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="302dp"
+        android:layout_height="167dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="-70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/horline" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:text="Topics"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backbtn" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="19dp"
+        android:gravity="center"
+        android:text="Explore a diverse range of topics that matter.\nFrom sustainability to technology,\nget insights on issues that shape our world."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button8"
+        android:layout_width="313dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="78dp"
+        android:background="@drawable/greenoutlinebutton"
+        android:text="The Impact of Renewable Energy on Climate Change"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button10"
+        android:layout_width="313dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="78dp"
+        android:background="@drawable/greenoutlinebutton"
+        android:text="The Importance of Sustainable Farming for a Greener Future"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button11"
+        android:layout_width="313dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="78dp"
+        android:background="@drawable/greenoutlinebutton"
+        android:text="The Power of Recycling:\nReducing Waste and Saving Resources"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="482dp"
+        android:layout_height="298dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="-100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button11"
+        app:srcCompat="@drawable/ellipse_2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
