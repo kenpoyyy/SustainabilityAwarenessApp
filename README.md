@@ -3,10 +3,11 @@
 *NOTE*
 - Activities(Pages) ARE NOT LINKED YET!
 - To pull this repository: Commit first **DO NOT PUSH OR COMMIT AND PUSH**
+- **Please Update the CHANGE LOG or Telegram for any changes**
 - Let me know if there's any issues
 
 ---------- **!!!CHANGE LOG!!!** ----------
-- Activity 1 is done.
+- Articles done.
 
 ---------- **!!!TODO!!!** ----------
 - All text to be put in JAVA file not in xml.
