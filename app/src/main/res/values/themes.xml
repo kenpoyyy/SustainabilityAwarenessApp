@@ -1,8 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.SustainabilityApp" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.SustainabilityApp" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/appgreen</item>
+        <item name="colorPrimaryDark">@color/appgreen</item>
+        <item name="colorAccent">@color/appgreen</item>
     </style>
 
     <style name="Theme.SustainabilityApp" parent="Base.Theme.SustainabilityApp" />
