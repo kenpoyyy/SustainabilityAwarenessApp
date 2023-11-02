@@ -16,6 +16,7 @@ public class Article1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.article1);
 
+        /* Assignment Statement */
         article1Content = findViewById(R.id.article1content);
         article1Citation = findViewById(R.id.article1citation);
 
@@ -30,7 +31,7 @@ public class Article1 extends AppCompatActivity {
                 "In the long term, the adoption of \"renewable energy\" appears inevitable. However, it will require substantial effort, meticulous planning, and will not come without its share of difficulties.";
 
         String citation = "Ray, P. Renewable energy and sustainability. Clean Techn Environ Policy 21, 1517–1533 (2019)."
-                + "\n\n" + "https://doi.org/10.1007/s10098-019-01739-4" + "\n";
+                + "\n\n" + "https://doi.org/10.1007/s10098-019-01739-4" + "\n\n" + "Image: Unsplash.com" +"\n";
 
         /* Method calling */
         article1Content.setText(content);

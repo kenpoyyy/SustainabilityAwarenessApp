@@ -16,6 +16,7 @@ public class Article3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.article3);
 
+        /* Assignment Statement */
         article3Content = findViewById(R.id.article3content);
         article3Citation = findViewById(R.id.article3citation);
 
@@ -26,7 +27,7 @@ public class Article3 extends AppCompatActivity {
                 + "\n\n" +  "As genomic approaches become more widely adopted in conservation, we expect that they will have a positive impact on management and policy decisions.";
 
         String citation = "Supple, M.A., Shapiro, B. Conservation of biodiversity in the genomics era. Genome Biol 19, 131 (2018)."
-                + "\n\n" + "https://doi.org/10.1186/s13059-018-1520-3" + "\n";
+                + "\n\n" + "https://doi.org/10.1186/s13059-018-1520-3" + "\n\n" + "Image: Unsplash.com" +"\n";
 
         /* Method calling */
         article3Content.setText(content);

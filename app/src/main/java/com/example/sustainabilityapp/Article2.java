@@ -16,6 +16,7 @@ public class Article2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.article2);
 
+        /* Assignment Statement */
         article2Content = findViewById(R.id.article2content);
         article2Citation = findViewById(R.id.article2citation);
 
@@ -40,7 +41,7 @@ public class Article2 extends AppCompatActivity {
                 "Originality/value\n" +
                 "The paper proposes a matrix that allows micro-organisations to clearly identify their collections as sustainable.";
         String citation = "Henninger, C.E., Alevizou, P.J. and Oates, C.J. (2016), What is sustainable fashion?, Journal of Fashion Marketing and Management, Vol. 20 No. 4, pp. 400-416." + "\n\n"
-                + "https://doi.org/10.1108/JFMM-07-2015-0052" + "\n";
+                + "https://doi.org/10.1108/JFMM-07-2015-0052" + "\n\n" + "Image: Unsplash.com" +"\n";
 
         /* Method calling */
         article2Content.setText(content);
