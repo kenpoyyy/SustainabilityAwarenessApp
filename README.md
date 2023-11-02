@@ -7,11 +7,12 @@
 - Let me know if there's any issues
 
 ---------- **!!!CHANGE LOG!!!** ----------
-- Articles done.
+- Articles with images done.
+- Disposal and Recycling Guidelines: "Why Should We Recycle?" Page and How to "Recycle Page" is done.
 
 ---------- **!!!TODO!!!** ----------
 - All text to be put in JAVA file not in xml.
-- Disposal and Recycling Guidelines
+- Disposal and Recycling Guidelines: "What to Recycle", "Where to recycle", and "What happens to recyclables"
 
 ---------- **!!!NOT DONE!!!** ----------
 
@@ -36,7 +37,7 @@ Reason:
   - External Links (to the offical site **look at the source/reference file in GDocs**)
 
 STATIC CONTENT:
-- Videos in Topics / Articles are not linked yet.
+- Videos in Topics not linked yet.
 - Content Images not inserted (Disposal and Recycling Guidelines)
 
 
