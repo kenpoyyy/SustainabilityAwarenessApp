@@ -6,6 +6,11 @@
 - **Please Update the CHANGE LOG or Telegram for any changes**
 - Let me know if there's any issues
 
+---------- **HOW TO PULL** ----------
+1. Rename file to SustainabilityAwarenessApp
+2. Android Studio Top Nav Bar -> Git -> Commit (This is to commit to your local)
+3. Top Nav Bar -> Git -> Pull (Pull from origin/master for the updated file)
+
 ---------- **!!!CHANGE LOG!!!** ----------
 - Events Page 2 UI Template is done
 - Shopping Guide Page 2 UI Template is done
