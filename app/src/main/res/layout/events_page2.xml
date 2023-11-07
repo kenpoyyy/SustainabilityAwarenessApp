@@ -7,7 +7,7 @@
     tools:context=".EventsPage2">
 
     <ImageView
-        android:id="@+id/imageView41"
+        android:id="@+id/backbtn_drgpage3"
         android:layout_width="634dp"
         android:layout_height="377dp"
         android:layout_marginTop="50dp"
@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/oval" />
 
     <ImageView
-        android:id="@+id/imageView42"
+        android:id="@+id/backbtn_eventpage2"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"
@@ -35,7 +35,7 @@
         android:layout_marginEnd="24dp"
         android:contentDescription="Map"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView42" />
+        app:layout_constraintTop_toBottomOf="@+id/backbtn_eventpage2" />
 
     <TextView
         android:id="@+id/textView27"
@@ -48,14 +48,14 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView41" />
+        app:layout_constraintTop_toTopOf="@+id/backbtn_drgpage3" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView41"
+        app:layout_constraintTop_toBottomOf="@+id/backbtn_drgpage3"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout

@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/ellipse_1" />
 
     <ImageView
-        android:id="@+id/imageView35"
+        android:id="@+id/backbtn_article1"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"

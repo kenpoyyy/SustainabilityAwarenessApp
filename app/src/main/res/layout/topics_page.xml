@@ -40,7 +40,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView20"
+        android:id="@+id/backbtn_topicpage"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"
@@ -63,7 +63,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button8"
+        android:id="@+id/topic1btn"
         android:layout_width="313dp"
         android:layout_height="102dp"
         android:layout_marginStart="78dp"
@@ -77,7 +77,7 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button10"
+        android:id="@+id/topic2btn"
         android:layout_width="313dp"
         android:layout_height="102dp"
         android:layout_marginStart="78dp"
@@ -87,10 +87,10 @@
         android:text="The Importance of Sustainable Farming for a Greener Future"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
+        app:layout_constraintTop_toBottomOf="@+id/topic1btn" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button11"
+        android:id="@+id/topic3btn"
         android:layout_width="313dp"
         android:layout_height="102dp"
         android:layout_marginStart="78dp"
@@ -100,7 +100,7 @@
         android:text="The Power of Recycling:\nReducing Waste and Saving Resources"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button10" />
+        app:layout_constraintTop_toBottomOf="@+id/topic2btn" />
 
     <ImageView
         android:id="@+id/imageView21"
@@ -111,7 +111,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button11"
+        app:layout_constraintTop_toBottomOf="@+id/topic3btn"
         app:srcCompat="@drawable/ellipse_2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

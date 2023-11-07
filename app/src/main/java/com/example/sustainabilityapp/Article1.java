@@ -2,7 +2,10 @@ package com.example.sustainabilityapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Article1 extends AppCompatActivity {
@@ -10,6 +13,7 @@ public class Article1 extends AppCompatActivity {
     /* Variable Declaration */
     TextView article1Content;
     TextView article1Citation;
+    private ImageView backbtn_article1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +23,15 @@ public class Article1 extends AppCompatActivity {
         /* Assignment Statement */
         article1Content = findViewById(R.id.article1content);
         article1Citation = findViewById(R.id.article1citation);
+        backbtn_article1 = (android.widget.ImageView) findViewById(R.id.backbtn_article1);
+
+        /* On Click Listener: Defines what happens when the image is clicked */
+        backbtn_article1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openArticlePage();
+            }
+        });
 
 
         /* String Contents "used for TextViews" */
@@ -36,5 +49,11 @@ public class Article1 extends AppCompatActivity {
         /* Method calling */
         article1Content.setText(content);
         article1Citation.setText(citation);
+    }
+
+    /* On Click Method */
+    public void openArticlePage() {
+        Intent intent = new Intent(this, ArticlesPage.class);
+        startActivity(intent);
     }
 }

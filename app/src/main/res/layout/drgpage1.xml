@@ -7,7 +7,7 @@
     tools:context=".DRGPage1">
 
     <ImageView
-        android:id="@+id/imageView38"
+        android:id="@+id/backbtn_article3"
         android:layout_width="482dp"
         android:layout_height="298dp"
         android:layout_marginTop="-200dp"
@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/ellipse_1" />
 
     <ImageView
-        android:id="@+id/imageView39"
+        android:id="@+id/backbtn_drgpage1"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"
@@ -47,7 +47,7 @@
         android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView38"
+        app:layout_constraintTop_toBottomOf="@+id/backbtn_article3"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout

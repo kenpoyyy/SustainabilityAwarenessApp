@@ -7,7 +7,7 @@
     tools:context=".ArticlesPage">
 
     <ImageView
-        android:id="@+id/imageView19"
+        android:id="@+id/backbtn_articles"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"
@@ -63,7 +63,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button9"
+        android:id="@+id/article1btn"
         android:layout_width="330dp"
         android:layout_height="102dp"
         android:layout_marginStart="79dp"
@@ -76,7 +76,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView22" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button12"
+        android:id="@+id/article2btn"
         android:layout_width="330dp"
         android:layout_height="102dp"
         android:layout_marginStart="79dp"
@@ -86,10 +86,10 @@
         android:text="What is sustainable fashion?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button9" />
+        app:layout_constraintTop_toBottomOf="@+id/article1btn" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button13"
+        android:id="@+id/article3btn"
         android:layout_width="330dp"
         android:layout_height="102dp"
         android:layout_marginStart="79dp"
@@ -99,7 +99,7 @@
         android:text="Conservation of biodiversity in the genomics era"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button12" />
+        app:layout_constraintTop_toBottomOf="@+id/article2btn" />
 
     <ImageView
         android:id="@+id/imageView24"
@@ -110,7 +110,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button13"
+        app:layout_constraintTop_toBottomOf="@+id/article3btn"
         app:srcCompat="@drawable/ellipse_2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

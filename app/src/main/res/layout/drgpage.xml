@@ -7,7 +7,7 @@
     tools:context=".DRGPage">
 
     <ImageView
-        android:id="@+id/imageView25"
+        android:id="@+id/backbtn_drgpage"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"
@@ -63,7 +63,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button14"
+        android:id="@+id/drg1btn"
         android:layout_width="320dp"
         android:layout_height="87dp"
         android:layout_marginStart="45dp"
@@ -76,7 +76,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView26" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button15"
+        android:id="@+id/drg2btn"
         android:layout_width="320dp"
         android:layout_height="87dp"
         android:layout_marginStart="45dp"
@@ -87,10 +87,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button14" />
+        app:layout_constraintTop_toBottomOf="@+id/drg1btn" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button16"
+        android:id="@+id/drg3btn"
         android:layout_width="320dp"
         android:layout_height="87dp"
         android:layout_marginStart="45dp"
@@ -101,10 +101,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button15" />
+        app:layout_constraintTop_toBottomOf="@+id/drg2btn" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button17"
+        android:id="@+id/drg4btn"
         android:layout_width="320dp"
         android:layout_height="87dp"
         android:layout_marginStart="45dp"
@@ -115,10 +115,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button16" />
+        app:layout_constraintTop_toBottomOf="@+id/drg3btn" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button18"
+        android:id="@+id/drg5btn"
         android:layout_width="320dp"
         android:layout_height="87dp"
         android:layout_marginStart="45dp"
@@ -129,5 +129,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button17" />
+        app:layout_constraintTop_toBottomOf="@+id/drg4btn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backbtn_editpage1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".EventsPage">
@@ -55,7 +56,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/backbtn_eventpage"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"

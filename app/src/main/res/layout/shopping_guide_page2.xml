@@ -7,7 +7,7 @@
     tools:context=".ShoppingGuidePage2">
 
     <ImageView
-        android:id="@+id/imageView43"
+        android:id="@+id/backbtn_drgpage5"
         android:layout_width="634dp"
         android:layout_height="350dp"
         android:layout_marginTop="-100dp"
@@ -17,7 +17,7 @@
         app:srcCompat="@drawable/oval" />
 
     <ImageView
-        android:id="@+id/imageView44"
+        android:id="@+id/backbtn_shopguide2"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"
@@ -59,7 +59,7 @@
         android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView43"
+        app:layout_constraintTop_toBottomOf="@+id/backbtn_drgpage5"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout

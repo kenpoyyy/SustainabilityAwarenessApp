@@ -2,7 +2,10 @@ package com.example.sustainabilityapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -15,6 +18,7 @@ public class DRGPage1 extends AppCompatActivity {
     TextView drgpage1content;
     TextView drgpage1content2;
     TextView drgpage1citation;
+    private ImageView backbtn_drgpage1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +31,15 @@ public class DRGPage1 extends AppCompatActivity {
         drgpage1content = findViewById(R.id.drgpage1content);
         drgpage1content2 = findViewById(R.id.drgpage1content2);
         drgpage1citation = findViewById(R.id.drgpage1citation);
+        backbtn_drgpage1 = (android.widget.ImageView) findViewById(R.id.backbtn_drgpage1);
+
+        /* On Click Listener: Defines what happens when the image is clicked */
+        backbtn_drgpage1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openDrgPage();
+            }
+        });
 
         /* String Contents "used for TextViews" */
         String header2 = "Recycling repurposes waste, conserves resources, and extends the landfill's lifespan.";
@@ -51,5 +64,10 @@ public class DRGPage1 extends AppCompatActivity {
         drgpage1content.setText(content);
         drgpage1content2.setText(content2);
         drgpage1citation.setText(citation);
+    }
+    /* On Click Method */
+    public void openDrgPage() {
+        Intent intent = new Intent(this, DRGPage.class);
+        startActivity(intent);
     }
 }

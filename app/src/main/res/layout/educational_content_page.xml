@@ -35,11 +35,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView15"
+        android:id="@+id/backbtn_educont"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:contentDescription="back button to home from edu page"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/backbtn" />
@@ -56,7 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button2"
+        android:id="@+id/topicsbtn"
         android:layout_width="150dp"
         android:layout_height="170dp"
         android:layout_marginStart="49dp"
@@ -67,7 +69,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView13" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button6"
+        android:id="@+id/articlesbtn"
         android:layout_width="150dp"
         android:layout_height="170dp"
         android:layout_marginTop="20dp"
@@ -78,7 +80,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView13" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button7"
+        android:id="@+id/drgbtn"
         android:layout_width="313dp"
         android:layout_height="197dp"
         android:layout_marginStart="49dp"
@@ -89,7 +91,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/topicsbtn" />
 
     <ImageView
         android:id="@+id/imageView16"
@@ -99,6 +101,6 @@
         android:rotation="180"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7"
+        app:layout_constraintTop_toBottomOf="@+id/drgbtn"
         app:srcCompat="@drawable/ellipse_1" />
 </androidx.constraintlayout.widget.ConstraintLayout>
