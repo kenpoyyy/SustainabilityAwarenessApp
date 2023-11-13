@@ -11,39 +11,14 @@
 3. Top Nav Bar -> Git -> Pull (Pull from origin/master for the updated file)
 
 ---------- **!!!CHANGE LOG!!!** ----------
-- Disposal and Recycling Guidelines is Done!
-- Activities (Pages) are ALL LINKED!
+- Videos Done!
 
 ---------- **!!!TODO!!!** ----------
 - All text to be put in JAVA file not in xml.
-- Video linking for Topics Page.
 - Firebase (Login, Register, Events, Shopping Guide).
+- Google Maps
 
 ---------- **!!!NOT DONE!!!** ----------
-
-FUNCTIONS:
-- Login Page & Register Page (Needs Firebase)
-
-ACTIVITIES(PAGES):
-
-**Login Page:**
-Reason: 
-- Firebase system needed.
-  - This includes:
-    - Obtaining user login credentials
-   
-**Register Page:**
-Reason: 
-- Firebase system needed.
-  - This includes:
-    - Obtaining user info to register
-  
-**Events 2:**
-Reason: 
-- Firebase system needed.
-  - This includes:
-    - Obtaining Location for users to GMaps API/SDK
-    - External Links or Reference (to the offical site **look at the source/reference file in GDocs**)
 
 **Shopping Guide 2:**
 Reason:
