@@ -1,7 +1,6 @@
 # SustainabilityAwarenessApp
 
 *NOTE*
-- Activities(Pages) ARE NOT LINKED YET!
 - To pull this repository: Commit first **DO NOT PUSH OR COMMIT AND PUSH**
 - **Please Update the CHANGE LOG or Telegram for any changes**
 - Let me know if there's any issues
@@ -12,15 +11,13 @@
 3. Top Nav Bar -> Git -> Pull (Pull from origin/master for the updated file)
 
 ---------- **!!!CHANGE LOG!!!** ----------
-- Events Page 2 UI Template is done
-- Shopping Guide Page 2 UI Template is done
-- Disposal and Recycling Guidelines: "Why Should We Recycle?" Page and How to "Recycle Page" is done.
+- Disposal and Recycling Guidelines is Done!
+- Activities (Pages) are ALL LINKED!
 
 ---------- **!!!TODO!!!** ----------
 - All text to be put in JAVA file not in xml.
-- Disposal and Recycling Guidelines: "What to Recycle", "Where to recycle", and "What happens to recyclables"
-- Linking the Activities(Pages)
-- Firebase (Login, Register, Events, Shopping Guide)
+- Video linking for Topics Page.
+- Firebase (Login, Register, Events, Shopping Guide).
 
 ---------- **!!!NOT DONE!!!** ----------
 
@@ -29,6 +26,18 @@ FUNCTIONS:
 
 ACTIVITIES(PAGES):
 
+**Login Page:**
+Reason: 
+- Firebase system needed.
+  - This includes:
+    - Obtaining user login credentials
+   
+**Register Page:**
+Reason: 
+- Firebase system needed.
+  - This includes:
+    - Obtaining user info to register
+  
 **Events 2:**
 Reason: 
 - Firebase system needed.
@@ -44,9 +53,5 @@ Reason:
   - Pricing
   - Price Comparisons
   - External Links or Reference (to the offical site **look at the source/reference file in GDocs**)
-
-STATIC CONTENT:
-- Videos in Topics not linked yet.
-- Content Images not inserted (Disposal and Recycling Guidelines).
 
 
