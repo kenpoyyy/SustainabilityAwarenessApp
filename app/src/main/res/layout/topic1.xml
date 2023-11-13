@@ -40,21 +40,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <VideoView
-        android:id="@+id/videoView"
+    <FrameLayout
+        android:id="@+id/topic1frame"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        app:layout_constraintTop_toBottomOf="@+id/textView19">
+
+        <VideoView
+            android:id="@+id/topic1video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/videoView"
+        app:layout_constraintTop_toBottomOf="@+id/topic1frame"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
@@ -66,9 +73,9 @@
                 android:id="@+id/topic1desc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="20dp"
                 android:gravity="center"
                 android:text="Climate change is a pressing concern with fossil fuel emissions driving global warming.Renewable energy is the solution. Discover how it can usher in a sustainable future by curbing CO2 emissions and environmental harm." />
 
@@ -105,59 +112,58 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="20dp"
                 android:text="Fossil fuel challenges are effectively addressed through clean, renewable energy sources like solar, wind, and hydropower. These sources produce electricity without emitting greenhouse gases, reducing CO2 emissions and our dependence on fossil fuels." />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="20dp"
                 android:text="1. Solar Energy:"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:text="Utilising the sun's power, solar plants create, affordable and accessible electricity, aiding in the fight against climate change." />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="20dp"
                 android:text="2. Wind Energy:"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:text="Wind turbines efficiently convert wind energy into electricity, offering a clean and rapidly expanding energy source worldwide." />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="20dp"
                 android:text="3. Hydropwer:"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:text="Harnessing the energy of moving water, hydropower stands as a reliable and well-established renewable energy solution.\n" />
-
 
         </LinearLayout>
 
