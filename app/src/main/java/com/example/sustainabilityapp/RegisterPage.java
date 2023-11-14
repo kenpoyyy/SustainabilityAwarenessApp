@@ -12,6 +12,8 @@ public class RegisterPage extends AppCompatActivity {
     /* Variable Declaration */
     private ImageView backbtn_regpage;
 
+    //test
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
