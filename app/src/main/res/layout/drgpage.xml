@@ -20,8 +20,9 @@
         android:id="@+id/imageView26"
         android:layout_width="100dp"
         android:layout_height="167dp"
-        android:layout_marginStart="-5dp"
+        android:layout_marginStart="-30dp"
         android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/horline" />
@@ -31,8 +32,9 @@
         android:layout_width="100dp"
         android:layout_height="167dp"
         android:layout_marginTop="2dp"
-        android:layout_marginEnd="-5dp"
+        android:layout_marginEnd="-30dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/horline" />
 
@@ -42,10 +44,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginTop="65dp"
+        android:layout_marginEnd="100dp"
         android:gravity="center"
         android:text="Disposal and Recycling\nGuidelines"
         android:textSize="20dp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -53,10 +57,10 @@
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_marginStart="19dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="19dp"
+        android:gravity="center"
         android:text="Guidelines for Responsible Disposal and Recycling."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,25 +71,28 @@
         android:layout_width="320dp"
         android:layout_height="87dp"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="11dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="45dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/greenoutlinebutton"
         android:text="Why should we recycle?"
+        app:layout_constraintBottom_toTopOf="@+id/drg2btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView26" />
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/drg2btn"
         android:layout_width="320dp"
         android:layout_height="87dp"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="45dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/greenoutlinebutton"
         android:text="How to Recycle?"
+        app:layout_constraintBottom_toTopOf="@+id/drg3btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/drg1btn" />
 
@@ -94,12 +101,13 @@
         android:layout_width="320dp"
         android:layout_height="87dp"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="45dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/greenoutlinebutton"
         android:text="What to recycle?"
+        app:layout_constraintBottom_toTopOf="@+id/drg4btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/drg2btn" />
 
@@ -108,12 +116,13 @@
         android:layout_width="320dp"
         android:layout_height="87dp"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="45dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/greenoutlinebutton"
         android:text="Where to recycle?"
+        app:layout_constraintBottom_toTopOf="@+id/drg5btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/drg3btn" />
 
@@ -122,12 +131,13 @@
         android:layout_width="320dp"
         android:layout_height="87dp"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="45dp"
+        android:layout_marginBottom="75dp"
         android:background="@drawable/greenoutlinebutton"
         android:text="What happens to recyclables?"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/drg4btn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
