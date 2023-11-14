@@ -49,6 +49,7 @@ public class Article1 extends AppCompatActivity {
         /* Method calling */
         article1Content.setText(content);
         article1Citation.setText(citation);
+
     }
 
     /* On Click Method */

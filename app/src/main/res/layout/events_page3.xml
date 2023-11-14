@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EventsPage2">
+    tools:context=".EventsPage3">
 
     <ImageView
         android:id="@+id/oval1"
@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/oval" />
 
     <ImageView
-        android:id="@+id/backbtn_eventpage2"
+        android:id="@+id/backbtn_eventpage3"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"
@@ -197,7 +197,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/eventSignUpbtn2"
+                android:id="@+id/eventSignUpbtn3"
                 android:layout_width="178dp"
                 android:layout_height="48dp"
                 android:layout_marginStart="110dp"
