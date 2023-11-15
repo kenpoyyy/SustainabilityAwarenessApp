@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "435167459294",
+    "firebase_url": "https://sustainable-app-33abe-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "sustainable-app-33abe",
+    "storage_bucket": "sustainable-app-33abe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435167459294:android:9793c09a4d6bc97fa9cf4f",
+        "android_client_info": {
+          "package_name": "com.example.sustainabilityapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435167459294-aut2uqe92ot80vhis6t2mp33k3aau806.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3CGiZA6_bfVnh_or1gVU0rxp9zqeRKbU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "435167459294-aut2uqe92ot80vhis6t2mp33k3aau806.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
