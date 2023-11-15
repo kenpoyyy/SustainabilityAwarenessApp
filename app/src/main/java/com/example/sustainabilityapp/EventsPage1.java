@@ -1,6 +1,7 @@
 package com.example.sustainabilityapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -29,6 +30,8 @@ public class EventsPage1 extends AppCompatActivity {
         /* Assignment Statement */
         backbtn_eventpage1 = (android.widget.ImageView) findViewById(R.id.backbtn_eventpage1); // Back Button
         signUpbtn = findViewById(R.id.eventSignUpbtn1); // Event Sign up
+        Fragment fragment = new MapFragment(); // Google Maps Fragment
+        getSupportFragmentManager().beginTransaction().replace(R.id.mapView1,fragment).commit();
         eventTitle = findViewById(R.id.eventTitle); // Events Title
         eventDate = findViewById(R.id.eventDate1); // Events Date
         eventTime = findViewById(R.id.eventTime1); // Events Time

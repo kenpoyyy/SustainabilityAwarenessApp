@@ -27,7 +27,7 @@
         app:srcCompat="@drawable/backbtn" />
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/topic3title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -47,7 +47,7 @@
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21">
+        app:layout_constraintTop_toBottomOf="@+id/topic3title">
 
         <VideoView
             android:id="@+id/topic3video"
@@ -96,6 +96,7 @@
                     tools:ignore="NotSibling" />
 
                 <TextView
+                    android:id="@+id/topic3Header1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -110,6 +111,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/topic3Content1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -133,6 +135,7 @@
                     tools:ignore="NotSibling" />
 
                 <TextView
+                    android:id="@+id/topic3Header2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -147,6 +150,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/topic3Content2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -155,6 +159,7 @@
                 android:text="Recycling is the collection, processing, and production of new products from waste. Here's how it works:" />
 
             <TextView
+                android:id="@+id/topic3SubHead1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -164,6 +169,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/topic3Content3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -171,6 +177,7 @@
                 android:text="Recyclables such paper, cardboard, glass, plastic, and metal are collected apart from trash." />
 
             <TextView
+                android:id="@+id/topic3SubHead2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -180,6 +187,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/topic3Content4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -187,6 +195,7 @@
                 android:text="Recycling facilities sort, clean, and process the collected materials." />
 
             <TextView
+                android:id="@+id/topic3SubHead3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -196,6 +205,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/topic3Content5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -203,6 +213,7 @@
                 android:text="By using processed materials instead of raw resources, new goods are produced." />
 
             <TextView
+                android:id="@+id/topic3SubHead4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -213,6 +224,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/topic3SubHead5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -222,6 +234,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/topic3Content6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -229,6 +242,7 @@
                 android:text="Recycling lowers the need for new materials, which reduces the consumption of vital natural resources including lumber, water, and minerals." />
 
             <TextView
+                android:id="@+id/topic3SubHead6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -238,6 +252,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/topic3Content7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -245,6 +260,7 @@
                 android:text="Recycling frequently uses less energy than producing goods using raw materials. For instance, the energy required to produce aluminum from bauxite is reduced by up to 95% when aluminum is recycled." />
 
             <TextView
+                android:id="@+id/topic3SubHead7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -254,6 +270,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/topic3Content8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -276,6 +293,7 @@
                     tools:ignore="NotSibling" />
 
                 <TextView
+                    android:id="@+id/topic3Header3"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -290,6 +308,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/topic3Content9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -298,6 +317,7 @@
                 android:text="Recycling also has positive effects on the economy and society, such as:" />
 
             <TextView
+                android:id="@+id/topic3SubHead8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -307,6 +327,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/topic3Content10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -314,6 +335,7 @@
                 android:text="The recycling sector creates jobs by offering positions in production, processing, and collection." />
 
             <TextView
+                android:id="@+id/topic3SubHead9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -323,6 +345,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/topic3Content11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -330,6 +353,7 @@
                 android:text="Recycling promotes environmentally responsible behaviour and sustainable consumption patterns." />
 
             <TextView
+                android:id="@+id/topic3SubHead10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -339,6 +363,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/topic3Content12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -361,6 +386,7 @@
                     tools:ignore="NotSibling" />
 
                 <TextView
+                    android:id="@+id/topic3Header4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -375,6 +401,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/topic3Content13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -383,6 +410,7 @@
                 android:text="By taking the following actions, individuals can support recycling efforts:" />
 
             <TextView
+                android:id="@+id/topic3SubHead11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -392,6 +420,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/topic3Content14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -399,6 +428,7 @@
                 android:text="To be sure you're recycling properly, familiarise yourself with your community's recycling regulations." />
 
             <TextView
+                android:id="@+id/topic3SubHead12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -408,6 +438,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/topic3Content15"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -415,6 +446,7 @@
                 android:text="Prioritise reducing waste and reusing products over recycling them." />
 
             <TextView
+                android:id="@+id/topic3SubHead13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -424,6 +456,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/topic3Content16"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -431,6 +464,7 @@
                 android:text="Participate in recycling initiatives and dispose of hazardous trash responsibly." />
 
             <TextView
+                android:id="@+id/topic3Content17"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"

@@ -22,16 +22,15 @@
         android:id="@+id/textView9"
         android:layout_width="106dp"
         android:layout_height="29dp"
-        android:layout_marginStart="153dp"
+        android:layout_marginStart="67dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="153dp"
-        android:text="Materials"
+        android:layout_marginEnd="135dp"
         android:gravity="center"
+        android:text="Materials"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/backbtn_educont"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -57,41 +56,76 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/topicsbtn"
-        android:layout_width="150dp"
-        android:layout_height="170dp"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="20dp"
-        android:text="Topics"
-        android:background="@drawable/greenoutlinebutton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/articlesbtn"
-        android:layout_width="150dp"
-        android:layout_height="170dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="49dp"
-        android:text="Articles"
-        android:background="@drawable/greenoutlinebutton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/drgbtn"
-        android:layout_width="313dp"
-        android:layout_height="197dp"
-        android:layout_marginStart="49dp"
+    <LinearLayout
+        android:id="@+id/LL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="49dp"
-        android:background="@drawable/greenoutlinebutton"
-        android:text="Disposal and Recycling Guideline"
+        android:orientation="horizontal"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topicsbtn" />
+        app:layout_constraintTop_toBottomOf="@id/imageView13">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/topicsbtn"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/greenoutlinebutton"
+            android:text="Topics"
+            app:layout_constraintEnd_toStartOf="@+id/articlesbtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/articlesbtn"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/greenoutlinebutton"
+            android:text="Articles"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/topicsbtn"
+            app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/LL2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LL1">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/drgbtn"
+            android:layout_width="313dp"
+            android:layout_height="197dp"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:background="@drawable/greenoutlinebutton"
+            android:text="Disposal and Recycling Guideline"
+            app:layout_constraintBottom_toTopOf="@id/imageView16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LL1" />
+
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView16"
@@ -101,6 +135,7 @@
         android:rotation="180"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/drgbtn"
+        app:layout_constraintTop_toBottomOf="@+id/LL2"
         app:srcCompat="@drawable/ellipse_1" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

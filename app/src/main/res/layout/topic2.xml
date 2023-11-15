@@ -27,14 +27,14 @@
         app:srcCompat="@drawable/backbtn" />
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/topic2title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="70dp"
         android:layout_marginEnd="40dp"
         android:gravity="center"
-        android:text="The Importance of SustainableFarming for a Greener Future"
+        android:text="The Importance of Sustainable Farming for a Greener Future"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,7 +47,7 @@
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView20">
+        app:layout_constraintTop_toBottomOf="@+id/topic2title">
 
         <VideoView
             android:id="@+id/topic2video"
@@ -96,6 +96,7 @@
                     tools:ignore="NotSibling" />
 
                 <TextView
+                    android:id="@+id/topic2Header1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -110,6 +111,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/topic2Content1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -133,6 +135,7 @@
                     tools:ignore="NotSibling" />
 
                 <TextView
+                    android:id="@+id/topic2Header2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -147,6 +150,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/topic2SubHead1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -157,6 +161,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/topic2SubHead2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -166,6 +171,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/topic2Content2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -173,6 +179,7 @@
                 android:text="A practice used by sustainable farmers to enhance soil health and lessen the demand for synthetic fertilisers. The life cycles of pests and illnesses are also disrupted by this technology." />
 
             <TextView
+                android:id="@+id/topic2SubHead3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -182,6 +189,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/topic2Content3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -189,6 +197,7 @@
                 android:text="Using natural methods for pest management and soil enrichment, organic farming stays away from synthetic pesticides and fertilisers." />
 
             <TextView
+                android:id="@+id/topic2SubHead4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -198,6 +207,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/topic2Content4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -205,6 +215,7 @@
                 android:text="This strategy uses as little soil disturbance as possible, which aids in moisture retention and lessens erosion. Mulching and cover crops are also encouraged." />
 
             <TextView
+                android:id="@+id/topic2SubHead5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -214,6 +225,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/topic2Content5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -221,6 +233,7 @@
                 android:text="Including trees in farming practices can improve soil fertility, store carbon, and create habitats for wildlife." />
 
             <TextView
+                android:id="@+id/topic2SubHead6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -230,6 +243,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/topic2Content6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -252,6 +266,7 @@
                     tools:ignore="NotSibling" />
 
                 <TextView
+                    android:id="@+id/topic2Header3"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -266,6 +281,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/topic2Content7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -289,6 +305,7 @@
                     tools:ignore="NotSibling" />
 
                 <TextView
+                    android:id="@+id/topic2Header4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -303,6 +320,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
+                android:id="@+id/topic2Content8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"

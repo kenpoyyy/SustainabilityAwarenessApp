@@ -34,6 +34,7 @@
         android:id="@+id/textView"
         android:layout_width="226dp"
         android:layout_height="54dp"
+        android:layout_marginStart="92dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="92dp"
         android:gravity="center"
@@ -41,13 +42,14 @@
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="154dp"
         android:layout_height="30dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="50dp"
         android:layout_marginEnd="230dp"
         android:layout_marginBottom="440dp"
         android:text="Welcome!"
@@ -62,7 +64,7 @@
         android:id="@+id/Username"
         android:layout_width="153dp"
         android:layout_height="21dp"
-        android:layout_marginStart="22dp"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="-7dp"
         android:layout_marginEnd="236dp"
         android:layout_marginBottom="425dp"
@@ -78,7 +80,7 @@
         android:layout_height="55dp"
         android:layout_marginStart="150dp"
         android:layout_marginTop="1dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginEnd="40dp"
         android:layout_marginBottom="425dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -116,17 +118,17 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hompage_intro_text" />
+        app:layout_constraintTop_toBottomOf="@+id/hompage_intro_text"
+        app:layout_constraintVertical_bias="0.526" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="203dp"
         android:layout_height="86dp"
         android:layout_marginTop="-4dp"
-        android:layout_marginEnd="-150dp"
         android:layout_marginBottom="230dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toStartOf="@+id/hompage_intro_text"
+        app:layout_constraintEnd_toStartOf="@id/textView8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hompage_intro_text"
         app:srcCompat="@drawable/horline" />
@@ -135,7 +137,6 @@
         android:id="@+id/imageView9"
         android:layout_width="203dp"
         android:layout_height="86dp"
-        android:layout_marginStart="-10dp"
         android:layout_marginTop="-13dp"
         android:layout_marginBottom="222dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
