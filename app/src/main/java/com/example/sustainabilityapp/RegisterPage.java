@@ -38,7 +38,9 @@ public class RegisterPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register_page);
-        getSupportActionBar().hide();
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
 
         // Initialize Firebase Auth
         editUserName=findViewById(R.id.editTextText6);
@@ -62,11 +64,11 @@ public class RegisterPage extends AppCompatActivity {
 
                 progressDialog.show();
 
-                String name=editUserName.toString();
-                String password=editPassword.toString();
-                String email=editEmail.toString();
-                String phone=editPhone.toString();
-                String city=editCity.toString();
+                String name=editUserName.getText().toString();
+                String password=editPassword.getText().toString();
+                String email=editEmail.getText().toString();
+                String phone=editPhone.getText().toString();
+                String city=editCity.getText().toString();
 
                 if (TextUtils.isEmpty(name)){
                     Toast.makeText(RegisterPage.this,"Enter Username",Toast.LENGTH_SHORT).show();
