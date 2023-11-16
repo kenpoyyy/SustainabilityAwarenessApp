@@ -11,7 +11,6 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -33,42 +32,39 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class LoginPage extends AppCompatActivity {
 
-    private Button regbtn; //reg btn
-
-    EditText LogInUserName,LogInPassword;
+    Button regbtn; //reg btn
+    EditText LogInEmail,LogInPassword;
     Button LogIn;
     Button btnSignInGoogle;
+    //firebase Google login Auth
     FirebaseAuth gAuth;
+    //email and password login Auth
+    FirebaseAuth eAuth;
     FirebaseDatabase gDatabase;
     GoogleSignInClient mGoogleSignInClient;
     ProgressDialog progressDialog;
-    private FirebaseAuth mAuth;
-    @Override
-   public void onStart() {
-        super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if(currentUser != null){
-            Toast.makeText(LoginPage.this,"User Already logged in",Toast.LENGTH_SHORT).show();
-        }
-    }
 
 
-    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_page);
-        mAuth = FirebaseAuth.getInstance();
 
-        LogInUserName=findViewById(R.id.editTextText2);
+        eAuth=FirebaseAuth.getInstance();
+
+
+        //sign in with password
+        LogInEmail=findViewById(R.id.editTextText2);
         LogInPassword=findViewById(R.id.editTextTextPassword2);
         LogIn=findViewById(R.id.loginbtn);
 
+
+        //sign in with google
         btnSignInGoogle=findViewById(R.id.btnSignInGoogle);
         gAuth=FirebaseAuth.getInstance();
         gDatabase=FirebaseDatabase.getInstance();
 
+        //progress dialog
         progressDialog=new ProgressDialog(LoginPage.this);
         progressDialog.setTitle("Creating Account");
         progressDialog.setMessage("Creating Account");
@@ -102,35 +98,35 @@ public class LoginPage extends AppCompatActivity {
         LogIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String UserName,Password;
 
-                UserName=String.valueOf(LogInUserName.getText());
-                Password=String.valueOf(LogInPassword.getText());
+                progressDialog.show();
 
-                if (TextUtils.isEmpty(UserName)){
-                    Toast.makeText(LoginPage.this,"Enter Username or email",Toast.LENGTH_SHORT).show();
+                String email,password;
+                email=LogInEmail.getText().toString();
+                password=LogInPassword.getText().toString();
+
+                if (TextUtils.isEmpty(email)){
+                    Toast.makeText(LoginPage.this,"Enter email",Toast.LENGTH_SHORT).show();
                     return;
                 }
 
-                if (TextUtils.isEmpty(Password)){
+                if (TextUtils.isEmpty(password)){
                     Toast.makeText(LoginPage.this,"Enter Password",Toast.LENGTH_SHORT).show();
                     return;
                 }
 
-                mAuth.signInWithEmailAndPassword(UserName, Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                eAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
-                            Log.d(TAG, "signInWithEmail:success");FirebaseUser user = mAuth.getCurrentUser();
-                        } else {
-                            // If sign in fails, display a message to the user.
-                            Log.w(TAG, "signInWithEmail:failure", task.getException());
-                            Toast.makeText(LoginPage.this, "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();
+
+                        progressDialog.dismiss();
+                        if(task.isSuccessful()){
+                            Intent intent= new Intent(LoginPage.this,HomePage.class);
+                            startActivity(intent);
                         }
                     }
                 });
+
             }
         });
 
@@ -151,7 +147,7 @@ public class LoginPage extends AppCompatActivity {
             try {
                 GoogleSignInAccount account=task.getResult(ApiException.class);
 
-                firebaseAuth(account.getIdToken());
+                firebaseAuthGoogle(account.getIdToken());
 
             }catch (ApiException e){
                 throw new RuntimeException(e);
@@ -159,7 +155,8 @@ public class LoginPage extends AppCompatActivity {
         }
     }
 
-    private void firebaseAuth(String idToken) {
+    //sign in with google authentication
+    private void firebaseAuthGoogle(String idToken) {
 
         AuthCredential credential= GoogleAuthProvider.getCredential(idToken,null);
 
