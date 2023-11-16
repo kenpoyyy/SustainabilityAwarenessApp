@@ -1,6 +1,7 @@
 package com.example.sustainabilityapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -29,6 +30,8 @@ public class EventsPage2 extends AppCompatActivity {
         /* Assignment Statement */
         backbtn_eventpage2 = (android.widget.ImageView) findViewById(R.id.backbtn_eventpage2); // Back Button
         signUpbtn2 = findViewById(R.id.eventSignUpbtn2); // Event Sign up
+        Fragment fragment = new MapFragment2(); // Google Maps Fragment
+        getSupportFragmentManager().beginTransaction().replace(R.id.mapView2,fragment).commit();
         eventTitle = findViewById(R.id.eventTitle); // Events Title
         eventDate = findViewById(R.id.eventDate1); // Events Date
         eventTime = findViewById(R.id.eventTime1); // Events Time
@@ -77,6 +80,8 @@ public class EventsPage2 extends AppCompatActivity {
         eventInfo.setText(Info);
         eventAge.setText(Age);
 
+        // Call the updateMapWithLocation method with a specific zoom level
+        ((MapFragment2) fragment).updateMapWithLocation(1.3255998686515635, 103.68775233108889, "Xcel Industrial Supplies Pte Ltd", 15.0f);
     }
     /* On Click Method */
     public void openEventPage() {

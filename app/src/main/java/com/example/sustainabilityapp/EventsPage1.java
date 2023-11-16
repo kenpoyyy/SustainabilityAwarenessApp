@@ -30,7 +30,7 @@ public class EventsPage1 extends AppCompatActivity {
         /* Assignment Statement */
         backbtn_eventpage1 = (android.widget.ImageView) findViewById(R.id.backbtn_eventpage1); // Back Button
         signUpbtn = findViewById(R.id.eventSignUpbtn1); // Event Sign up
-        Fragment fragment = new MapFragment(); // Google Maps Fragment
+        Fragment fragment = new MapFragment1(); // Google Maps Fragment
         getSupportFragmentManager().beginTransaction().replace(R.id.mapView1,fragment).commit();
         eventTitle = findViewById(R.id.eventTitle); // Events Title
         eventDate = findViewById(R.id.eventDate1); // Events Date
@@ -78,6 +78,9 @@ public class EventsPage1 extends AppCompatActivity {
         eventTime.setText(Time);
         eventInfo.setText(Info);
         eventAge.setText(Age);
+
+        // Call the updateMapWithLocation method with a specific zoom level
+        ((MapFragment1) fragment).updateMapWithLocation(1.334653051844768, 103.68144441541662, "Singapore Discovery Center", 15.0f);
     }
     /* On Click Method */
     public void openEventPage() {

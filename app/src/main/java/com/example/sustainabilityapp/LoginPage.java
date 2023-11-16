@@ -63,7 +63,7 @@ public class LoginPage extends AppCompatActivity {
 
         LogInUserName=findViewById(R.id.editTextText2);
         LogInPassword=findViewById(R.id.editTextTextPassword2);
-        LogIn=findViewById(R.id.button3);
+        LogIn=findViewById(R.id.loginbtn);
 
         btnSignInGoogle=findViewById(R.id.btnSignInGoogle);
         gAuth=FirebaseAuth.getInstance();

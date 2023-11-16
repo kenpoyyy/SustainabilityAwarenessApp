@@ -3,14 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MapFragment1">
+    tools:context=".MapFragment2">
 
     <!--Map Fragment-->
     <fragment
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/Map1"
+        android:id="@+id/Map2"
         android:name="com.google.android.gms.maps.SupportMapFragment" />
-
 
 </FrameLayout>

@@ -1,6 +1,7 @@
 package com.example.sustainabilityapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -29,6 +30,8 @@ public class EventsPage3 extends AppCompatActivity {
         /* Assignment Statement */
         backbtn_eventpage3 = (android.widget.ImageView) findViewById(R.id.backbtn_eventpage3); // Back Button
         signUpbtn3 = findViewById(R.id.eventSignUpbtn3); // Event Sign up
+        Fragment fragment = new MapFragment3(); // Google Maps Fragment
+        getSupportFragmentManager().beginTransaction().replace(R.id.mapView3,fragment).commit();
         eventTitle = findViewById(R.id.eventTitle); // Events Title
         eventDate = findViewById(R.id.eventDate1); // Events Date
         eventTime = findViewById(R.id.eventTime1); // Events Time
@@ -76,6 +79,9 @@ public class EventsPage3 extends AppCompatActivity {
         eventTime.setText(Time);
         eventInfo.setText(Info);
         eventAge.setText(Age);
+
+        // Call the updateMapWithLocation method with a specific zoom level
+        ((MapFragment3) fragment).updateMapWithLocation(1.2993521451718657, 103.62135100018888, "TuasOne Waste-to-Energy", 15.0f);
     }
     /* On Click Method */
     public void openEventPage() {
