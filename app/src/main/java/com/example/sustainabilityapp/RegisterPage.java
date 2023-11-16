@@ -19,7 +19,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class RegisterPage extends AppCompatActivity {
@@ -120,7 +119,6 @@ public class RegisterPage extends AppCompatActivity {
             }
         });
 
-
         /* Assignment Statement */
         backbtn_regpage = (android.widget.ImageView) findViewById(R.id.backbtn_regpage);
 
@@ -131,10 +129,7 @@ public class RegisterPage extends AppCompatActivity {
                 openLoginPage();
             }
         });
-
     }
-
-
     /* Method */
     public void openLoginPage() {
         Intent intent = new Intent(this, LoginPage.class);
