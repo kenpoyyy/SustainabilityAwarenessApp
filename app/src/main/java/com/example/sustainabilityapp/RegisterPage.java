@@ -7,6 +7,7 @@ import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -47,7 +48,7 @@ public class RegisterPage extends AppCompatActivity {
         editPhone=findViewById(R.id.editTextText9);
         editCity=findViewById(R.id.editTextText10);
         SignUp=findViewById(R.id.button);
-        // alreadyAccount=findViewById(R.id.alreadyAccount);
+
         auth=FirebaseAuth.getInstance();
         database=FirebaseDatabase.getInstance();
 
@@ -60,28 +61,56 @@ public class RegisterPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                progressDialog.show();
+
                 String name=editUserName.toString();
                 String password=editPassword.toString();
                 String email=editEmail.toString();
                 String phone=editPhone.toString();
                 String city=editCity.toString();
 
+                if (TextUtils.isEmpty(name)){
+                    Toast.makeText(RegisterPage.this,"Enter Username",Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (TextUtils.isEmpty(email)){
+                    Toast.makeText(RegisterPage.this,"Enter Email",Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (TextUtils.isEmpty(city)){
+                    Toast.makeText(RegisterPage.this,"Enter City",Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (TextUtils.isEmpty(password)){
+                    Toast.makeText(RegisterPage.this,"Enter Password",Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (TextUtils.isEmpty(phone)){
+                    Toast.makeText(RegisterPage.this,"Enter Phone Number",Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 auth.createUserWithEmailAndPassword(email,password)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
+
+                                progressDialog.dismiss();
                                 if(task.isSuccessful()){
 
                                     UserProfile profile=new UserProfile(name,email,password,phone,city);
                                     String id=task.getResult().getUser().getUid();
-
                                     database.getReference().child("Users").child(id).setValue(profile);
+
                                     Intent intent=new Intent(RegisterPage.this,HomePage.class);
                                     startActivity(intent);
 
                                 }
                                 else{
-
                                     Toast.makeText(RegisterPage.this, task.getException().getMessage(),Toast.LENGTH_SHORT).show();
                                 }
 
@@ -103,61 +132,6 @@ public class RegisterPage extends AppCompatActivity {
             }
         });
 
-
-        /*SignUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                String UserName,Email,City,Password,Phone;
-
-                UserName=String.valueOf(editUserName.getText());
-                Email=String.valueOf(editEmail.getText());
-                City=String.valueOf(editCity.getText());
-                Password=String.valueOf(editPassword.getText());
-                Phone=String.valueOf(editPhone.getText());
-
-                if (TextUtils.isEmpty(UserName)){
-                    Toast.makeText(RegisterPage.this,"Enter Username",Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                if (TextUtils.isEmpty(Email)){
-                    Toast.makeText(RegisterPage.this,"Enter Email",Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                if (TextUtils.isEmpty(City)){
-                    Toast.makeText(RegisterPage.this,"Enter City",Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                if (TextUtils.isEmpty(Password)){
-                    Toast.makeText(RegisterPage.this,"Enter Password",Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                if (TextUtils.isEmpty(Phone)){
-                    Toast.makeText(RegisterPage.this,"Enter Phone Number",Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                mAuth.createUserWithEmailAndPassword(Email, Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
-                            Log.d(TAG, "createUserWithEmail:success");
-                            FirebaseUser user = mAuth.getCurrentUser();
-                        } else {
-                            // If sign in fails, display a message to the user.
-                            Log.w(TAG, "createUserWithEmail:failure", task.getException());
-                            Toast.makeText(RegisterPage.this, "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
-            }
-        });*/
     }
 
 

@@ -13,7 +13,6 @@ public class UserProfile {
     }
 
     public UserProfile(){
-
     }
 
 
