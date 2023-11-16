@@ -11,16 +11,21 @@
 3. Top Nav Bar -> Git -> Pull (Pull from origin/master for the updated file)
 
 ---------- **!!!CHANGE LOG!!!** ----------
-- Videos Done!
+- Google Sign-in Button. (Error when logging in)
+- All Maps feature for the 3 events.
+- Optimisation of UI for physical device.
 
 ---------- **!!!TODO!!!** ----------
-- All text to be put in JAVA file not in xml.
-- Firebase (Login, Register, Events, Shopping Guide).
-- Google Maps
+- All text to be put in JAVA file not in xml. (Ken)
+- Firebase (Login, Register, Events, Shopping Guide). (Zhangchi)
 
 ---------- **!!!NOT DONE!!!** ----------
+**Events Page**
+Reason:
+- Firebase System
+- Eventlist
 
-**Shopping Guide 2:**
+**Shopping Guide 2**
 Reason:
 - Firebase (Firestore) system needed.
 - This includes:

@@ -38,10 +38,12 @@ public class EditProfilePage extends AppCompatActivity {
         });
     }
     /* On Click Method */
+    //Go back to homepage
     public void openHomepage() {
         Intent intent = new Intent(this, HomePage.class);
         startActivity(intent);
     }
+    //User logs out
     public void openLoginPage() {
         Intent intent = new Intent(this, LoginPage.class);
         startActivity(intent);

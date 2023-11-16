@@ -56,7 +56,7 @@ public class LoginPage extends AppCompatActivity {
         //sign in with password
         LogInEmail=findViewById(R.id.editTextText2);
         LogInPassword=findViewById(R.id.editTextTextPassword2);
-        LogIn=findViewById(R.id.button3);
+        LogIn=findViewById(R.id.loginbtn);
 
 
         //sign in with google
