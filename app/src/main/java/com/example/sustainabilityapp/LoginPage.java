@@ -66,8 +66,8 @@ public class LoginPage extends AppCompatActivity {
 
         //progress dialog
         progressDialog=new ProgressDialog(LoginPage.this);
-        progressDialog.setTitle("Creating Account");
-        progressDialog.setMessage("Creating Account");
+        progressDialog.setTitle("Login Account");
+        progressDialog.setMessage("Login Account");
 
         GoogleSignInOptions gso=new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
