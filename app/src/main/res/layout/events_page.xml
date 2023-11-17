@@ -29,7 +29,8 @@
         android:gravity="center"
         android:text="Events"
         android:textSize="20dp"
-        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ralewaybold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/backbtn_eventpage"
         app:layout_constraintTop_toTopOf="parent" />
@@ -40,6 +41,7 @@
         android:layout_height="85dp"
         android:layout_marginTop="-1dp"
         android:gravity="center"
+        android:fontFamily="@font/ralewayregular"
         android:text="Explore upcoming events in one place. \nDiscover community happenings,\neducational workshops, and more on our\nEvents page."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,19 +52,20 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/ralewayregular"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
     <ImageView
         android:id="@+id/backbtn_eventpage"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/backbtn" />
+        app:srcCompat="@drawable/backleft" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -28,29 +28,31 @@
         android:gravity="center"
         android:text="Materials"
         android:textSize="20dp"
-        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ralewaybold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/backbtn_educont"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/backbtn_educont"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:clickable="true"
         android:contentDescription="back button to home from edu page"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/backbtn" />
+        app:srcCompat="@drawable/backleft" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="289dp"
         android:layout_height="81dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="3dp"
         android:gravity="center"
+        android:fontFamily="@font/ralewayregular"
         android:text="Discover a wealth of sustainability resources, from articles to guides. Dive in and explore the tools to make a positive impact."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,6 +79,7 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/greenoutlinebutton"
             android:text="Topics"
+            android:fontFamily="@font/ralewaybold"
             app:layout_constraintEnd_toStartOf="@+id/articlesbtn"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView13" />
@@ -91,6 +94,7 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/greenoutlinebutton"
             android:text="Articles"
+            android:fontFamily="@font/ralewaybold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/topicsbtn"
             app:layout_constraintTop_toBottomOf="@+id/imageView13" />
@@ -119,6 +123,7 @@
             android:gravity="center"
             android:background="@drawable/greenoutlinebutton"
             android:text="Disposal and Recycling Guideline"
+            android:fontFamily="@font/ralewaybold"
             app:layout_constraintBottom_toTopOf="@id/imageView16"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"

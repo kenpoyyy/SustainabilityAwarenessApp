@@ -18,13 +18,13 @@
 
     <ImageView
         android:id="@+id/backbtn_topic1"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/backbtn" />
+        app:srcCompat="@drawable/backleft" />
 
     <TextView
         android:id="@+id/topic1title"
@@ -35,7 +35,7 @@
         android:layout_marginEnd="20dp"
         android:gravity="center"
         android:text="The Impact of Renewable Energy on Climate Change"
-        android:textStyle="bold"
+        android:fontFamily="@font/ralewaybold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -77,6 +77,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="20dp"
                 android:gravity="center"
+                android:fontFamily="@font/ralewayregular"
                 android:text="Climate change is a pressing concern with fossil fuel emissions driving global warming.Renewable energy is the solution. Discover how it can usher in a sustainable future by curbing CO2 emissions and environmental harm." />
 
 
@@ -103,7 +104,7 @@
                     android:layout_marginTop="5dp"
                     android:text="The Renewable Energy Solution:"
                     android:textSize="20dp"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/ralewaybold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/smallicon"
                     app:layout_constraintTop_toTopOf="@id/smallicon" />
@@ -117,6 +118,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
+                android:fontFamily="@font/ralewayregular"
                 android:text="Fossil fuel challenges are effectively addressed through clean, renewable energy sources like solar, wind, and hydropower. These sources produce electricity without emitting greenhouse gases, reducing CO2 emissions and our dependence on fossil fuels." />
 
             <TextView
@@ -127,7 +129,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
                 android:text="1. Solar Energy:"
-                android:textStyle="bold" />
+                android:fontFamily="@font/ralewaybold" />
 
             <TextView
                 android:id="@+id/topic1SubCont1"
@@ -135,6 +137,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
+                android:fontFamily="@font/ralewayregular"
                 android:text="Utilising the sun's power, solar plants create, affordable and accessible electricity, aiding in the fight against climate change." />
 
             <TextView
@@ -145,7 +148,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
                 android:text="2. Wind Energy:"
-                android:textStyle="bold" />
+                android:fontFamily="@font/ralewaybold" />
 
             <TextView
                 android:id="@+id/topic1SubCont2"
@@ -153,6 +156,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
+                android:fontFamily="@font/ralewayregular"
                 android:text="Wind turbines efficiently convert wind energy into electricity, offering a clean and rapidly expanding energy source worldwide." />
 
             <TextView
@@ -163,7 +167,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
                 android:text="3. Hydropwer:"
-                android:textStyle="bold" />
+                android:fontFamily="@font/ralewaybold" />
 
             <TextView
                 android:id="@+id/topic1SubCont3"
@@ -171,6 +175,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
+                android:fontFamily="@font/ralewayregular"
                 android:text="Harnessing the energy of moving water, hydropower stands as a reliable and well-established renewable energy solution.\n" />
 
         </LinearLayout>

@@ -15,6 +15,7 @@ public class EventsPage3 extends AppCompatActivity {
 
     /* Variable Declaration */
     private ImageView backbtn_eventpage3; // Back Button
+    private ImageView homebtn_eventpage3; // Home Button
     private Button signUpbtn3; // Sign Up Button
     TextView eventTitle;
     TextView eventDate;
@@ -29,6 +30,7 @@ public class EventsPage3 extends AppCompatActivity {
 
         /* Assignment Statement */
         backbtn_eventpage3 = (android.widget.ImageView) findViewById(R.id.backbtn_eventpage3); // Back Button
+        homebtn_eventpage3 = (android.widget.ImageView) findViewById(R.id.homebtn_eventpage3); // Home Button
         signUpbtn3 = findViewById(R.id.eventSignUpbtn3); // Event Sign up
         Fragment fragment = new MapFragment3(); // Google Maps Fragment
         getSupportFragmentManager().beginTransaction().replace(R.id.mapView3,fragment).commit();
@@ -47,6 +49,7 @@ public class EventsPage3 extends AppCompatActivity {
         String Age = "Minimum Age of 13 years old";
 
         /* On Click Listener: Defines what happens when the image is clicked */
+
         // FOR BACK BUTTON:
         backbtn_eventpage3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +57,13 @@ public class EventsPage3 extends AppCompatActivity {
                 openEventPage();
             }
         });
+
+        // FOR HOME BUTTON:
+        homebtn_eventpage3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { openHomePage(); }
+        });
+
         // FOR SIGN-UP BUTTON:
         signUpbtn3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,8 +94,16 @@ public class EventsPage3 extends AppCompatActivity {
         ((MapFragment3) fragment).updateMapWithLocation(1.2993521451718657, 103.62135100018888, "TuasOne Waste-to-Energy", 15.0f);
     }
     /* On Click Method */
+
+    // FOR BACK BUTTON
     public void openEventPage() {
         Intent intent = new Intent(this, EventsPage.class);
+        startActivity(intent);
+    }
+
+    // FOR HOME BUTTON:
+    public void openHomePage() {
+        Intent intent = new Intent(this, HomePage.class);
         startActivity(intent);
     }
 }

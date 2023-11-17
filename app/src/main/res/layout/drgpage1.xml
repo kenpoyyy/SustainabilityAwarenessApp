@@ -7,7 +7,7 @@
     tools:context=".DRGPage1">
 
     <ImageView
-        android:id="@+id/backbtn_article3"
+        android:id="@+id/backdrop1"
         android:layout_width="482dp"
         android:layout_height="298dp"
         android:layout_marginTop="-200dp"
@@ -19,13 +19,13 @@
 
     <ImageView
         android:id="@+id/backbtn_drgpage1"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/backbtn" />
+        app:srcCompat="@drawable/backleft" />
 
     <TextView
         android:id="@+id/textView25"
@@ -37,7 +37,7 @@
         android:gravity="center"
         android:text="Why Should We Recycle?"
         android:textSize="20sp"
-        android:textStyle="bold"
+        android:fontFamily="@font/ralewaybold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -47,7 +47,7 @@
         android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backbtn_article3"
+        app:layout_constraintTop_toBottomOf="@+id/backdrop1"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
@@ -85,7 +85,7 @@
                     android:layout_marginTop="0dp"
                     android:contentDescription="load header 2"
                     android:textSize="15sp"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/ralewaybold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/smallicon10"
                     app:layout_constraintTop_toTopOf="@id/smallicon10" />
@@ -99,6 +99,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="20dp"
+                android:fontFamily="@font/ralewayregular"
                 android:contentDescription="load large text"
                 android:text="\n" />
 
@@ -126,7 +127,7 @@
                     android:layout_marginTop="4dp"
                     android:contentDescription="load header 2"
                     android:textSize="15sp"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/ralewaybold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/smallicon11"
                     app:layout_constraintTop_toTopOf="@id/smallicon11" />
@@ -140,6 +141,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="20dp"
+                android:fontFamily="@font/ralewayregular"
                 android:contentDescription="load large text"
                 android:text="\n" />
 
@@ -166,7 +168,7 @@
                     android:layout_marginTop="0dp"
                     android:text="Reference:"
                     android:textSize="20sp"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/ralewaybold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/smallicon12"
                     app:layout_constraintTop_toTopOf="@id/smallicon12" />
@@ -180,6 +182,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="20dp"
+                android:fontFamily="@font/ralewayregular"
                 android:contentDescription="load citation text"
                 android:text="\n" />
 

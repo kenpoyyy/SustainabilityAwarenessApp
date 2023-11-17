@@ -8,13 +8,23 @@
 
     <ImageView
         android:id="@+id/backbtn_articles"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/backbtn" />
+        app:srcCompat="@drawable/backleft" />
+
+    <ImageView
+        android:id="@+id/homebtn_articles"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/greenhouse" />
 
     <ImageView
         android:id="@+id/imageView22"
@@ -48,7 +58,8 @@
         android:gravity="center"
         android:text="Articles"
         android:textSize="20dp"
-        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ralewaybold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -61,6 +72,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="19dp"
         android:gravity="center"
+        android:fontFamily="@font/ralewayregular"
         android:text="Get informed, inspired, and take positive steps\ntowards a more sustainable future."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,6 +87,7 @@
         android:layout_marginEnd="79dp"
         android:background="@drawable/greenoutlinebutton"
         android:text="Renewable energy and sustainability"
+        android:fontFamily="@font/ralewaybold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView22" />
@@ -87,6 +100,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="79dp"
         android:background="@drawable/greenoutlinebutton"
+        android:fontFamily="@font/ralewaybold"
         android:text="What is sustainable fashion?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -100,6 +114,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="79dp"
         android:background="@drawable/greenoutlinebutton"
+        android:fontFamily="@font/ralewaybold"
         android:text="Conservation of biodiversity in the genomics era"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

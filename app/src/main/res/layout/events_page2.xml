@@ -19,13 +19,23 @@
 
     <ImageView
         android:id="@+id/backbtn_eventpage2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/backbtn" />
+        app:srcCompat="@drawable/backleft" />
+
+    <ImageView
+        android:id="@+id/homebtn_eventpage2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/greenhouse" />
 
     <FrameLayout
         android:id="@+id/mapView2"
@@ -35,6 +45,7 @@
         android:layout_marginTop="6dp"
         android:layout_marginEnd="24dp"
         android:contentDescription="Map"
+        android:fontFamily="@font/ralewaybold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,6 +87,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="30dp"
                 android:hint="Event Title"
+                android:fontFamily="@font/ralewaybold"
                 android:gravity="center"
                 android:textSize="20sp"
                 android:textStyle="bold"/>
@@ -102,6 +114,7 @@
                     android:layout_marginRight="30dp"
                     android:layout_marginTop="3dp"
                     android:hint="date goes here"
+                    android:fontFamily="@font/ralewayregular"
                     android:contentDescription="load event's date"
                     android:textSize="15sp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -132,6 +145,7 @@
                     android:layout_marginRight="30dp"
                     android:layout_marginTop="3dp"
                     android:hint="time goes here"
+                    android:fontFamily="@font/ralewayregular"
                     android:textSize="15sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/eventTimeImg1"
@@ -161,6 +175,7 @@
                     android:layout_marginRight="30dp"
                     android:layout_marginTop="0dp"
                     android:hint="event info goes here"
+                    android:fontFamily="@font/ralewayregular"
                     android:textSize="15sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/eventInfoImg1"
@@ -191,6 +206,7 @@
                     android:layout_marginRight="30dp"
                     android:layout_marginTop="3dp"
                     android:hint="age group goes here (if there's any)"
+                    android:fontFamily="@font/ralewayregular"
                     android:textSize="15sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/eventAgeImg1"
@@ -212,6 +228,7 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/greenoutlinebutton"
                     android:text="Sign Up Now!"
+                    android:fontFamily="@font/ralewaybold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

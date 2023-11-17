@@ -15,6 +15,7 @@ public class EventsPage2 extends AppCompatActivity {
 
     /* Variable Declaration */
     private ImageView backbtn_eventpage2; // Back Button
+    private ImageView homebtn_eventpage2; // Home Button
     private Button signUpbtn2; // Sign Up Button
     TextView eventTitle;
     TextView eventDate;
@@ -29,6 +30,7 @@ public class EventsPage2 extends AppCompatActivity {
 
         /* Assignment Statement */
         backbtn_eventpage2 = (android.widget.ImageView) findViewById(R.id.backbtn_eventpage2); // Back Button
+        homebtn_eventpage2 = (android.widget.ImageView) findViewById(R.id.homebtn_eventpage2); // Home Button
         signUpbtn2 = findViewById(R.id.eventSignUpbtn2); // Event Sign up
         Fragment fragment = new MapFragment2(); // Google Maps Fragment
         getSupportFragmentManager().beginTransaction().replace(R.id.mapView2,fragment).commit();
@@ -54,6 +56,13 @@ public class EventsPage2 extends AppCompatActivity {
                 openEventPage();
             }
         });
+
+        // FOR HOME BUTTON:
+        homebtn_eventpage2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { openHomePage(); }
+        });
+
         // FOR SIGN-UP BUTTON:
         signUpbtn2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,8 +93,16 @@ public class EventsPage2 extends AppCompatActivity {
         ((MapFragment2) fragment).updateMapWithLocation(1.3255998686515635, 103.68775233108889, "Xcel Industrial Supplies Pte Ltd", 15.0f);
     }
     /* On Click Method */
+
+    // FOR BACK BUTTON:
     public void openEventPage() {
         Intent intent = new Intent(this, EventsPage.class);
+        startActivity(intent);
+    }
+
+    // FOR HOME BUTTON:
+    public void openHomePage() {
+        Intent intent = new Intent(this, HomePage.class);
         startActivity(intent);
     }
 }

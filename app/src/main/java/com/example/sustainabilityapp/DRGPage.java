@@ -11,12 +11,13 @@ import android.widget.ImageView;
 public class DRGPage extends AppCompatActivity {
 
     /* Variable Declaration */
-    private ImageView backbtn_drgpage; //Back btn
-    private Button drg1btn; //DRG 1 btn
-    private Button drg2btn; //DRG 2 btn
-    private Button drg3btn; //DRG 3 btn
-    private Button drg4btn; //DRG 4 btn
-    private Button drg5btn; //DRG 5 btn
+    private ImageView backbtn_drgpage; //Back Button
+    private ImageView homebtn_drg; // Home Button
+    private Button drg1btn; //DRG 1 Button
+    private Button drg2btn; //DRG 2 Button
+    private Button drg3btn; //DRG 3 Button
+    private Button drg4btn; //DRG 4 Button
+    private Button drg5btn; //DRG 5 Button
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,7 @@ public class DRGPage extends AppCompatActivity {
 
         /* Assignment Statement */
         backbtn_drgpage = (android.widget.ImageView) findViewById(R.id.backbtn_drgpage); //back btn
+        homebtn_drg = (android.widget.ImageView) findViewById(R.id.homebtn_drg); // Home btn
         drg1btn = (android.widget.Button) findViewById(R.id.drg1btn); //drg 1 btn
         drg2btn = (android.widget.Button) findViewById(R.id.drg2btn); //drg 2 btn
         drg3btn = (android.widget.Button) findViewById(R.id.drg3btn); //drg 3 btn
@@ -38,6 +40,13 @@ public class DRGPage extends AppCompatActivity {
                 openEduContPage();
             }
         });
+
+        // FOR HOME BUTTON:
+        homebtn_drg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { openHomePage(); }
+        });
+
         drg1btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -74,6 +83,13 @@ public class DRGPage extends AppCompatActivity {
         Intent intent = new Intent(this, EducationalContentPage.class);
         startActivity(intent);
     }
+
+    // FOR HOME BUTTON:
+    public void openHomePage() {
+        Intent intent = new Intent(this, HomePage.class);
+        startActivity(intent);
+    }
+
     public void openDRG1Page() {
         Intent intent = new Intent(this, DRGPage1.class);
         startActivity(intent);

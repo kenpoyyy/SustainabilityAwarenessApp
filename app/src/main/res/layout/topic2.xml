@@ -18,13 +18,13 @@
 
     <ImageView
         android:id="@+id/backbtn_topic2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/backbtn" />
+        app:srcCompat="@drawable/backleft" />
 
     <TextView
         android:id="@+id/topic2title"
@@ -35,7 +35,7 @@
         android:layout_marginEnd="40dp"
         android:gravity="center"
         android:text="The Importance of Sustainable Farming for a Greener Future"
-        android:textStyle="bold"
+        android:fontFamily="@font/ralewaybold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -77,6 +77,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="30dp"
                 android:gravity="center"
+                android:fontFamily="@font/ralewayregular"
                 android:text="Sustainable farming practices are the key to a greener, more resilient future. With the growing global population increasing the demand for food, it's crucial to protect our natural resources. In this post, we'll explore the significance of sustainable farming." />
 
 
@@ -103,7 +104,7 @@
                     android:layout_marginTop="-5dp"
                     android:text="The Problems with Conventional Agriculture:"
                     android:textSize="20dp"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/ralewaybold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/smallicon2"
                     app:layout_constraintTop_toTopOf="@id/smallicon2" />
@@ -117,6 +118,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
+                android:fontFamily="@font/ralewayregular"
                 android:text="Conventional agriculture has produced a lot of food but at a substantial environmental cost due to its heavy reliance on pesticides, monoculture farming, and excessive water use. Negative effects include soil erosion, biodiversity loss, and chemical discharge into waterways." />
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -142,7 +144,7 @@
                     android:layout_marginTop="3dp"
                     android:text="Sustainability Farming Principles:"
                     android:textSize="20dp"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/ralewaybold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/smallicon3"
                     app:layout_constraintTop_toTopOf="@id/smallicon3" />
@@ -158,7 +160,7 @@
                 android:layout_marginRight="20dp"
                 android:text="Sustainability in Agriculture:"
                 android:textSize="15sp"
-                android:textStyle="bold" />
+                android:fontFamily="@font/ralewaybold" />
 
             <TextView
                 android:id="@+id/topic2SubHead2"
@@ -168,7 +170,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="20dp"
                 android:text="1. Crop rotation:"
-                android:textStyle="bold" />
+                android:fontFamily="@font/ralewaybold" />
 
             <TextView
                 android:id="@+id/topic2Content2"
@@ -176,6 +178,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
+                android:fontFamily="@font/ralewayregular"
                 android:text="A practice used by sustainable farmers to enhance soil health and lessen the demand for synthetic fertilisers. The life cycles of pests and illnesses are also disrupted by this technology." />
 
             <TextView
@@ -186,7 +189,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
                 android:text="2. Organic farming:"
-                android:textStyle="bold" />
+                android:fontFamily="@font/ralewaybold" />
 
             <TextView
                 android:id="@+id/topic2Content3"
@@ -194,6 +197,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
+                android:fontFamily="@font/ralewayregular"
                 android:text="Using natural methods for pest management and soil enrichment, organic farming stays away from synthetic pesticides and fertilisers." />
 
             <TextView
@@ -204,7 +208,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
                 android:text="3. Conservation Agriculture:"
-                android:textStyle="bold" />
+                android:fontFamily="@font/ralewaybold" />
 
             <TextView
                 android:id="@+id/topic2Content4"
@@ -212,6 +216,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
+                android:fontFamily="@font/ralewayregular"
                 android:text="This strategy uses as little soil disturbance as possible, which aids in moisture retention and lessens erosion. Mulching and cover crops are also encouraged." />
 
             <TextView
@@ -222,7 +227,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
                 android:text="4. Agroforestry:"
-                android:textStyle="bold" />
+                android:fontFamily="@font/ralewaybold" />
 
             <TextView
                 android:id="@+id/topic2Content5"
@@ -230,6 +235,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
+                android:fontFamily="@font/ralewayregular"
                 android:text="Including trees in farming practices can improve soil fertility, store carbon, and create habitats for wildlife." />
 
             <TextView
@@ -240,7 +246,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
                 android:text="5. Water Management:"
-                android:textStyle="bold" />
+                android:fontFamily="@font/ralewaybold" />
 
             <TextView
                 android:id="@+id/topic2Content6"
@@ -248,6 +254,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
+                android:fontFamily="@font/ralewayregular"
                 android:text="Responsible water use in agriculture involves strategies like drip irrigation and rainwater collection." />
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -273,7 +280,7 @@
                     android:layout_marginTop="3dp"
                     android:text="Environmental and Social Benefits:"
                     android:textSize="20dp"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/ralewaybold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/smallicon4"
                     app:layout_constraintTop_toTopOf="@id/smallicon4" />
@@ -287,6 +294,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
+                android:fontFamily="@font/ralewayregular"
                 android:text="A variety of environmental and social advantages are provided by sustainable agricultural practices. They safeguard biodiversity, improve soil health, lower greenhouse gas emissions, and conserve water.\n\nAdditionally, boosting food security, building economic resilience, and supporting local communities are all common components of sustainable farming." />
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -312,7 +320,7 @@
                     android:layout_marginTop="3dp"
                     android:text="The Consumer's Role:"
                     android:textSize="20dp"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/ralewaybold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/smallicon5"
                     app:layout_constraintTop_toTopOf="@id/smallicon5" />
@@ -326,6 +334,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
+                android:fontFamily="@font/ralewayregular"
                 android:text="We can significantly contribute to the support of sustainable farming as consumers. By consuming foods that are farmed responsibly and locally, we encourage environmentally friendly practices. Additionally, lowering consumer food waste is crucial for sustainability.\n\nIn addition to being necessary, sustainable farming offers the chance to convert our agricultural systems into examples of ecological harmony and resilience. We can help create a greener and more sustainable future for everyone by embracing sustainable practices and encouraging local, environmentally conscious agriculture.\n" />
 
         </LinearLayout>

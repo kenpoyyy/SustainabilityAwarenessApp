@@ -8,15 +8,15 @@
 
     <ImageView
         android:id="@+id/backbtn_editpage"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/backbtn" />
+        app:srcCompat="@drawable/backleft" />
 
     <ImageView
         android:id="@+id/editprofpic"
@@ -40,6 +40,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="16dp"
         android:text="Logout"
+        android:fontFamily="@font/ralewaybold"
         android:background="@color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/editprofpic"
@@ -123,6 +124,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="60dp"
         android:text="Turn on notification"
+        android:fontFamily="@font/ralewayregular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editcity" />
@@ -136,6 +138,7 @@
         android:layout_marginBottom="32dp"
         android:background="@drawable/greenoutlinebutton"
         android:text="Cancel"
+        android:fontFamily="@font/ralewaybold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switch1"
@@ -151,6 +154,7 @@
         android:layout_marginBottom="32dp"
         android:background="@drawable/greenoutlinebutton"
         android:text="Save"
+        android:fontFamily="@font/ralewaybold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/canceleditbtn"

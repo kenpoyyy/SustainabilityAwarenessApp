@@ -19,13 +19,13 @@
 
     <ImageView
         android:id="@+id/backbtn_article1"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/backbtn" />
+        app:srcCompat="@drawable/backleft" />
 
     <TextView
         android:id="@+id/textView22"
@@ -36,8 +36,8 @@
         android:layout_marginEnd="20dp"
         android:gravity="center"
         android:text="Renewable energy and sustainability"
+        android:fontFamily="@font/ralewaybold"
         android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -84,7 +84,7 @@
                     android:layout_marginTop="0dp"
                     android:text="Abstract:"
                     android:textSize="20dp"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/ralewaybold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/smallicon7"
                     app:layout_constraintTop_toTopOf="@id/smallicon7" />
@@ -98,6 +98,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="20dp"
+                android:fontFamily="@font/ralewayregular"
                 android:contentDescription="load large text"
                 android:text="\n" />
 
@@ -122,8 +123,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
                     android:text="Reference:"
+                    android:fontFamily="@font/ralewaybold"
                     android:textSize="20dp"
-                    android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/smallicon8"
                     app:layout_constraintTop_toTopOf="@id/smallicon8" />
@@ -137,6 +138,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="20dp"
+                android:fontFamily="@font/ralewayregular"
                 android:contentDescription="load citation text"
                 android:text="\n" />
 

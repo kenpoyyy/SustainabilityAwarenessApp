@@ -29,7 +29,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="66dp"
         android:ems="10"
-        android:hint="Username"
+        android:hint="Name"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -102,7 +102,7 @@
         android:gravity="center"
         android:text="Create new user"
         android:textSize="20dp"
-        android:textStyle="bold"
+        android:fontFamily="@font/ralewaybold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
@@ -110,15 +110,15 @@
 
     <ImageView
         android:id="@+id/backbtn_regpage"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="50dp"
         app:layout_constraintEnd_toStartOf="@+id/textView3"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/backbtn" />
+        app:srcCompat="@drawable/backleft" />
 
     <TextView
         android:id="@+id/textView5"
@@ -129,6 +129,7 @@
         android:layout_marginEnd="78dp"
         android:gravity="center"
         android:text="Sign up to start the sustainability lifestyle!"
+        android:fontFamily="@font/ralewayregular"
         app:layout_constraintBottom_toTopOf="@+id/imageView12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -144,7 +145,7 @@
         android:layout_marginEnd="88dp"
         android:background="@drawable/greenoutlinebutton"
         android:text="Sign up"
-        android:textStyle="bold"
+        android:fontFamily="@font/ralewaybold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText10" />
