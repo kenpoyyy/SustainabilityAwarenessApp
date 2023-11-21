@@ -22,8 +22,8 @@ public class MapFragment2 extends Fragment {
     private GoogleMap googleMap;
 
     // The location of the event
-    private static final LatLng LOCATION_XCE_INDUSTRIAL_SUPPLIES =
-            new LatLng(1.3255676907726692, 103.68770941560328);
+    private static final LatLng LOCATION2 =
+            new LatLng(1.2993521451718657, 103.62135100018888);
 
     // Method to update the map with a specific location
     public void updateMapWithLocation(double latitude, double longitude, String markerTitle, float zoomLevel) {
@@ -73,11 +73,11 @@ public class MapFragment2 extends Fragment {
                     googleMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
                         @Override
                         public void onMapClick(@NonNull LatLng latLng) {
-                            LatLng location2 = new LatLng(1.3255676907726692, 103.68770941560328);
+                            LatLng location2 = new LatLng(1.2993521451718657, 103.62135100018888);
 
                             MarkerOptions markerOptions = new MarkerOptions();
                             markerOptions.position(location2);
-                            markerOptions.title("XCE Industrial Supplies Pte Ltd");
+                            markerOptions.title("TuasOne Waste-to-Energy");
 
                             // Clear existing markers, add the new marker, and move the camera
                             googleMap.clear();
@@ -98,15 +98,15 @@ public class MapFragment2 extends Fragment {
     // Method to add a marker and move the camera to a predefined location
     private void addMarkerAndMoveCamera(GoogleMap googleMap) {
         MarkerOptions markerOptions = new MarkerOptions()
-                .position(LOCATION_XCE_INDUSTRIAL_SUPPLIES)
-                .title("XCE Industrial Supplies Pte Ltd");
+                .position(LOCATION2)
+                .title("TuasOne Waste-to-Energy");
 
         // Add the marker to the map
         googleMap.addMarker(markerOptions);
 
         // Move the camera to the marker location with animation
         CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(
-                LOCATION_XCE_INDUSTRIAL_SUPPLIES, 15f); // Adjust the zoom level as needed
+                LOCATION2, 15f); // Adjust the zoom level as needed
         googleMap.animateCamera(cameraUpdate);
     }
 }

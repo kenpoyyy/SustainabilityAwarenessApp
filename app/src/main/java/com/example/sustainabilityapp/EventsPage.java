@@ -63,10 +63,21 @@ public class EventsPage extends AppCompatActivity implements SelectListener{
 
     @Override
     public void onItemClicked(int position) {
-        Intent intent=new Intent(EventsPage.this, EventsPage1.class);
-        //intent.putExtra("")
-        startActivity(intent);
+        //***Updated Code to link to other Event Pages.***
+        EventItem clickedEvent = eventList.get(position);
 
+        // Determine which event was clicked based on the position
+        if (position == 0) {
+            Intent intent = new Intent(EventsPage.this, EventsPage1.class);
+            // You can also pass data to the next activity if needed using intent.putExtra()
+            startActivity(intent);
+        } else if (position == 1) {
+            Intent intent = new Intent(EventsPage.this, EventsPage2.class);
+            startActivity(intent);
+        } else if (position == 2) {
+            Intent intent = new Intent(EventsPage.this, EventsPage3.class);
+            startActivity(intent);
+        }
     }
 
 }

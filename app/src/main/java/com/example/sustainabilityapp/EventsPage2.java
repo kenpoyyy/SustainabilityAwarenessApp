@@ -41,12 +41,12 @@ public class EventsPage2 extends AppCompatActivity {
         eventAge = findViewById(R.id.eventAge1); // Events Age
 
         /* String Contents "used for TextViews" */
-        String Title = "CREUSE Wood Upcycling Journey";
-        String Date = "Saturday, 8 July - 18 November 2023";
-        String Time = "10:00 AM - 12:00 PM";
-        String Info = "See how damaged wooden pallets that are seemingly beyond repair can be " +
-                "transformed into useful lifestyle products. ";
-        String Age = "Recommended Age of 9 years old and above";
+        String Title = "Turning Waste To Energy: Tuasone Waste-To-Energy Plant Tour";
+        String Date = "Tuesday, 11 July - 28 November 2023";
+        String Time = "1:30 PM - 4:30 PM";
+        String Info = "Discover how Singapore efficiently manages its daily waste, reducing solid " +
+                "waste by 90% while simultaneously generating power.";
+        String Age = "Minimum Age of 13 years old";
 
         /* On Click Listener: Defines what happens when the image is clicked */
         // FOR BACK BUTTON:
@@ -69,7 +69,7 @@ public class EventsPage2 extends AppCompatActivity {
             public void onClick(View view) {
                 try {
                     // Define the URL you want to open
-                    String url = "https://www.eventbrite.sg/e/creuse-wood-upcycling-journey-tickets-643561809697";
+                    String url = "https://www.eventbrite.sg/e/turning-waste-to-energy-tuasone-waste-to-energy-plant-tour-tickets-643582170597";
 
                     // Create an Intent with ACTION_VIEW and the URL
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
@@ -90,7 +90,7 @@ public class EventsPage2 extends AppCompatActivity {
         eventAge.setText(Age);
 
         // Call the updateMapWithLocation method with a specific zoom level
-        ((MapFragment2) fragment).updateMapWithLocation(1.3255998686515635, 103.68775233108889, "Xcel Industrial Supplies Pte Ltd", 15.0f);
+        ((MapFragment2) fragment).updateMapWithLocation(1.2993521451718657, 103.62135100018888, "TuasOne Waste-to-Energy", 15.0f);
     }
     /* On Click Method */
 

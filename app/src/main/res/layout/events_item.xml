@@ -1,65 +1,63 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="125dp"
     android:padding="16dp">
 
+    <!-- Horizontal line as a divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C0C0C0"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="54dp"
-        android:layout_height="54dp"
-        android:src="@drawable/environmentalicon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/earth"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvNumber"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:textSize="20dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="@font/ralewaybold"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="1" />
+        tools:text="Title" />
 
     <TextView
         android:id="@+id/tvNumbersInText"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-45dp"
-        android:textSize="16sp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="@font/ralewayregular"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/tvNumber"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/tvNumber"
-        tools:text="One" />
+        tools:text="Description" />
 
     <TextView
         android:id="@+id/tvNumbersInText1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-20dp"
-        android:textSize="16sp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="@font/ralewayregular"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/tvNumbersInText"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/tvNumbersInText"
         tools:text="Two" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/viewDetailsButton"
-        android:layout_width="116dp"
-        android:layout_height="53dp"
-        android:layout_marginEnd="10dp"
-        android:background="@drawable/greenoutlinebutton"
-        android:text="View Details"
-        android:fontFamily="@font/ralewaybold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.215" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

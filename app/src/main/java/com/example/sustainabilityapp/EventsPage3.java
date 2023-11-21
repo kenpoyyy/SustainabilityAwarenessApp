@@ -41,12 +41,12 @@ public class EventsPage3 extends AppCompatActivity {
         eventAge = findViewById(R.id.eventAge1); // Events Age
 
         /* String Contents "used for TextViews" */
-        String Title = "Turning Waste To Energy: Tuasone Waste-To-Energy Plant Tour";
-        String Date = "Tuesday, 11 July - 28 November 2023";
-        String Time = "1:30 PM - 4:30 PM";
-        String Info = "Discover how Singapore efficiently manages its daily waste, reducing solid " +
-                "waste by 90% while simultaneously generating power.";
-        String Age = "Minimum Age of 13 years old";
+        String Title = "Where Singapore’s waste goes: A tour of Semakau Landfill";
+        String Date = "Saturday, 22 July - 30 November 2023";
+        String Time = "9:30 AM - 4:30 PM";
+        String Info = "A remarkable feat of engineering and a sanctuary for diverse wildlife, " +
+                "seize the unique chance to explore Semakau, Singapore's offshore landfill.";
+        String Age = "Minimum Age of 7 years old";
 
         /* On Click Listener: Defines what happens when the image is clicked */
 
@@ -70,7 +70,7 @@ public class EventsPage3 extends AppCompatActivity {
             public void onClick(View view) {
                 try {
                     // Define the URL you want to open
-                    String url = "https://www.eventbrite.sg/e/turning-waste-to-energy-tuasone-waste-to-energy-plant-tour-tickets-643582170597";
+                    String url = "https://www.eventbrite.sg/e/where-singapores-waste-goes-a-tour-of-semakau-landfill-tickets-643575831637";
 
                     // Create an Intent with ACTION_VIEW and the URL
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
@@ -91,7 +91,7 @@ public class EventsPage3 extends AppCompatActivity {
         eventAge.setText(Age);
 
         // Call the updateMapWithLocation method with a specific zoom level
-        ((MapFragment3) fragment).updateMapWithLocation(1.2993521451718657, 103.62135100018888, "TuasOne Waste-to-Energy", 15.0f);
+        ((MapFragment3) fragment).updateMapWithLocation(1.2701833381781908, 103.79598791551251, "Pasir Panjang Ferry Terminal", 15.0f);
     }
     /* On Click Method */
 

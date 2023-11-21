@@ -15,23 +15,23 @@ import java.util.List;
 
 class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHolder> {
 
-    private List<EventItem> eventList;
-    private Context context;
     private final SelectListener listener;
+    private final List<EventItem> eventList;
+    private final Context context;
 
-    public EventAdapter(List<EventItem> eventList,Context context,SelectListener listener) {
+    public EventAdapter(List<EventItem> eventList, Context context, SelectListener listener) {
         this.eventList = eventList;
-        this.context=context;
-        this.listener=listener;
+        this.context = context;
+        this.listener = listener;
     }
 
     @NonNull
     @Override
     public EventViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-       LayoutInflater inflater=LayoutInflater.from(context);
-       View view=inflater.inflate(R.layout.events_item,parent,false);
+        LayoutInflater inflater = LayoutInflater.from(context);
+        View view = inflater.inflate(R.layout.events_item, parent, false);
 
-        return new EventAdapter.EventViewHolder(view,listener);
+        return new EventAdapter.EventViewHolder(view, listener);
     }
 
 
@@ -41,12 +41,7 @@ class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHolder> {
         holder.eventNumber.setText(eventList.get(position).getEventNumber());
         holder.eventType.setText(eventList.get(position).getEventType());
         holder.eventDescription.setText(eventList.get(position).getEventDescription());
-        holder.viewDetails.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                listener.onItemClicked(position);
-            }
-        });
+
 
     }
 
@@ -62,25 +57,42 @@ class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHolder> {
         public TextView eventType;
         public TextView eventDescription;
         public Button viewDetails;
-        public EventViewHolder(@NonNull View itemView,SelectListener listener){
+
+        public EventViewHolder(@NonNull View itemView, SelectListener listener) {
             super(itemView);
             eventNumber = itemView.findViewById(R.id.tvNumber);
             eventType = itemView.findViewById(R.id.tvNumbersInText);
             eventDescription = itemView.findViewById(R.id.tvNumbersInText1);
-            viewDetails = itemView.findViewById(R.id.viewDetailsButton);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if(listener!=null){
-                        int pos=getAdapterPosition();
-                        if(pos!=RecyclerView.NO_POSITION){
-                            listener.onItemClicked(pos);
+                    if (listener != null) {
+                        int pos = getAdapterPosition();
+                        if (pos != RecyclerView.NO_POSITION) {
+
+                            // Animate the item when clicked
+                            itemView.animate()
+                                    .scaleX(0.95f)
+                                    .scaleY(0.95f)
+                                    .setDuration(150)
+                                    .withEndAction(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            itemView.animate()
+                                                    .scaleX(1.0f)
+                                                    .scaleY(1.0f)
+                                                    .setDuration(150)
+                                                    .start();
+                                            // Handle the click event
+                                            listener.onItemClicked(pos);
+                                        }
+                                    })
+                                    .start();
                         }
                     }
                 }
             });
         }
-
-}
+    }
 
 }
