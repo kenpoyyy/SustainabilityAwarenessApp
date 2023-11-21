@@ -1,65 +1,65 @@
 package com.example.sustainabilityapp;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import org.w3c.dom.Text;
+
 import java.util.List;
 
-class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHolder> {
+class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductViewHolder> {
 
     private final SelectListener listener;
-    private final List<EventItem> eventList;
+    private final List<ProductItem> productItems;
     private final Context context;
 
-    public EventAdapter(List<EventItem> eventList, Context context, SelectListener listener) {
-        this.eventList = eventList;
-        this.context = context;
-        this.listener = listener;
-    }
 
+    public ProductAdapter(Context context, SelectListener listener,List<ProductItem> productItems){
+        this.productItems =productItems;
+        this.listener=listener;
+        this.context = context;
+    }
     @NonNull
     @Override
-    public EventViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater = LayoutInflater.from(context);
-        View view = inflater.inflate(R.layout.events_item, parent, false);
-
-        return new EventAdapter.EventViewHolder(view, listener);
+    public ProductAdapter.ProductViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        LayoutInflater inflater=LayoutInflater.from(context);
+        View view=inflater.inflate(R.layout.product_item,parent,false);
+        return new ProductAdapter.ProductViewHolder(view,listener);
     }
 
-
     @Override
-    public void onBindViewHolder(@NonNull EventViewHolder holder, @SuppressLint("RecyclerView") int position) {
+    public void onBindViewHolder(@NonNull ProductAdapter.ProductViewHolder holder, int position) {
 
-        holder.eventNumber.setText(eventList.get(position).getEventNumber());
-        holder.eventType.setText(eventList.get(position).getEventType());
-        holder.eventDescription.setText(eventList.get(position).getEventDescription());
-
+        holder.productImage.setImageAlpha(productItems.get(position).getImage());
+        holder.productBrand.setText(productItems.get(position).getBrand());
+        holder.productName.setText(productItems.get(position).getName());
+        holder.productPrice.setText(productItems.get(position).getPrice());
     }
 
     @Override
     public int getItemCount() {
-        return eventList.size();
+        return productItems.size();
     }
 
+    public class ProductViewHolder extends RecyclerView.ViewHolder{
 
-    public static class EventViewHolder extends RecyclerView.ViewHolder {
-        //ImageView imageView;
-        public TextView eventNumber;
-        public TextView eventType;
-        public TextView eventDescription;
+        public ImageView productImage;
+        public TextView productName,productPrice,productBrand;
 
-        public EventViewHolder(@NonNull View itemView, SelectListener listener) {
+        public ProductViewHolder(@NonNull View itemView, SelectListener listener) {
             super(itemView);
-            eventNumber = itemView.findViewById(R.id.tvNumber);
-            eventType = itemView.findViewById(R.id.tvNumbersInText);
-            eventDescription = itemView.findViewById(R.id.tvNumbersInText1);
+            productImage=itemView.findViewById(R.id.product_image);
+            productName=itemView.findViewById(R.id.product_name);
+            productPrice=itemView.findViewById(R.id.product_price);
+            productBrand=itemView.findViewById(R.id.product_brand);
+
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

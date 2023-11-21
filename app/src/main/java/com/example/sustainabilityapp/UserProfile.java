@@ -2,7 +2,7 @@ package com.example.sustainabilityapp;
 
 public class UserProfile {
 
-    String name, email, password,phone,city;
+    String name, email,password,phone,city;
 
     public UserProfile(String name, String email, String password, String phone, String city) {
         this.name = name;

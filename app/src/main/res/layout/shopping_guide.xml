@@ -14,8 +14,8 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="153dp"
         android:gravity="center"
-        android:text="Shopping Guide"
-        android:textSize="20dp"
+        android:text="@string/shopping_guide"
+        android:textSize="20sp"
         android:fontFamily="@font/ralewaybold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,7 +38,7 @@
         android:layout_marginTop="-1dp"
         android:gravity="center"
         android:fontFamily="@font/ralewayregular"
-        android:text="Ready to shop sustainably? Our Shopping Guide is your gateway to eco-friendly products and a greener lifestyle."
+        android:text="@string/ready_to_shop_sustainably_our_shopping_guide_is_your_gateway_to_eco_friendly_products_and_a_greener_lifestyle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
@@ -66,11 +66,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textView18"
         app:srcCompat="@drawable/filter" />
 
-    <GridView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/product_list"
         android:layout_width="409dp"
-        android:layout_height="548dp"
-        android:layout_marginTop="1dp"
+        android:layout_height="550dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/backbtn_topic3" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
