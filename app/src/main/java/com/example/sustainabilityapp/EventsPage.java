@@ -1,21 +1,31 @@
 package com.example.sustainabilityapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
+import java.util.List;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class EventsPage extends AppCompatActivity {
+public class EventsPage extends AppCompatActivity implements SelectListener{
 
     /* Variable Declaration */
-    private ImageView backbtn_eventpage;
+    ImageView backbtn_eventpage;
+    RecyclerView recyclerView;
+    EventAdapter eventAdapter;
+    List<EventItem> eventList;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.events_page);
+
+        displayItem();
 
         /* Assignment Statement */
         backbtn_eventpage = (android.widget.ImageView) findViewById(R.id.backbtn_eventpage);
@@ -27,10 +37,36 @@ public class EventsPage extends AppCompatActivity {
                 openHomepage();
             }
         });
+
     }
+
+    private void displayItem() {
+        //initialize the recyclerView
+        recyclerView=findViewById(R.id.recyclerView1);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new GridLayoutManager(this,1));
+        eventList=new ArrayList<>();
+        eventList.add(new EventItem("Race on Sunshine-Discovering Solar Energy", "Singapore Discovery Center", "01 July - 26 November 2023","EventsPage1"));
+        eventList.add(new EventItem("Turning waste to energy: TuasOne Waste-To-Energy Plant Tour", "TuasOne Waste-To-Energy Plant", "11 July - 28 November 2023","EventsPage2"));
+        eventList.add(new EventItem("Where Singapore’s waste goes: A tour of Semakau Landfill","Semakau Landfill","22 July - 30 November 2023","EventsPage3"));
+        eventAdapter=new EventAdapter(eventList,this,this);
+        recyclerView.setAdapter(eventAdapter);
+    }
+
+
     /* Method */
     public void openHomepage() {
         Intent intent = new Intent(this, HomePage.class);
         startActivity(intent);
     }
+
+
+    @Override
+    public void onItemClicked(int position) {
+        Intent intent=new Intent(EventsPage.this, EventsPage1.class);
+        //intent.putExtra("")
+        startActivity(intent);
+
+    }
+
 }
