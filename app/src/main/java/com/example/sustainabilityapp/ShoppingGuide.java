@@ -27,6 +27,8 @@ public class ShoppingGuide extends AppCompatActivity implements SelectListener{
         
         displayItem();
 
+        addProductItem();
+
         /* Assignment Statement */
         backbtn_shopguide = (android.widget.ImageView) findViewById(R.id.backbtn_shopguide);
 
@@ -39,6 +41,14 @@ public class ShoppingGuide extends AppCompatActivity implements SelectListener{
         });
     }
 
+    private void addProductItem() {
+        productInfo.add(new ProductInfo("Bamboo Spoon","28.9 SGD","SustainableSG","Made from bamboo, a natural and renewable source, these eco-friendly and reusable spoons will bring you a step closer towards a more sustainable Singapore and a more environmentally responsible you!","Not only are these spoons made to last, they are wax-free and uncoated to keep your food away from unpleasant odours and harmful toxins. Dish out delicious meals for your loved ones while saving the environment, one stir at a time.",
+                "Wood Spoon","2200 JPY"," Bamboo spoons are a sustainable choice, as bamboo grows rapidly and requires minimal resources. This makes them an eco-friendly alternative to plastic or metal utensils. Their biodegradability also ensures a lower environmental impact, contributing positively to efforts in reducing waste and promoting sustainable living practices.","https://sustainablesg.com/products/across-the-land-bamboo-spoons","https://sustainablesg.com/products/across-the-land-bamboo-spoons",R.drawable.bamboon_spoon,R.drawable.wood_spoon,4));
+
+
+
+    }
+
     private void displayItem() {
 
         recyclerView=findViewById(R.id.product_list);
@@ -47,6 +57,7 @@ public class ShoppingGuide extends AppCompatActivity implements SelectListener{
         productItems=new ArrayList<>();
         //add in items
         productItems.add(new ProductItem("Bamboo Spoons","SustainableSG","28.90",R.drawable.bamboon_spoon));
+        //few more to go
 
 
         productAdapter=new ProductAdapter(this,this,productItems);

@@ -9,8 +9,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
+import java.util.List;
 import java.util.Objects;
 
 public class ShoppingGuidePage2 extends AppCompatActivity {
@@ -18,12 +20,17 @@ public class ShoppingGuidePage2 extends AppCompatActivity {
     /* Variable Declaration */
     private ImageView backbtn_shopguide2;
 
+    private List<ProductInfo> productList;
 
 
-    @Override
+        @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.shopping_guide_page2);
+
+
+        //add product
+        addProductItem();
 
         //set values
         inputValue();
@@ -40,6 +47,8 @@ public class ShoppingGuidePage2 extends AppCompatActivity {
         });
     }
 
+
+
     private void inputValue() {
 
         TextView productName1=findViewById(R.id.itemName);
@@ -54,8 +63,8 @@ public class ShoppingGuidePage2 extends AppCompatActivity {
         ImageView image2=findViewById(R.id.imageView46);
         Button button1=findViewById(R.id.buybtn1);
         Button button2=findViewById(R.id.signUpbtn1);
-        View rating=findViewById(R.id.customerRating);
-        //
+        RatingBar rating=findViewById(R.id.customerRating);
+
 
         productName1.setText(Objects.requireNonNull(getIntent().getStringExtra("NAME1")));
         productName2.setText(Objects.requireNonNull(getIntent().getStringExtra("NAME2")));
@@ -104,8 +113,20 @@ public class ShoppingGuidePage2 extends AppCompatActivity {
         });
 
         reviews.setText(getIntent().getStringExtra("REVIEW"));
+        rating.getRating();
 
     }
+
+
+    private void addProductItem() {
+        ProductInfo product1=new ProductInfo("Bamboo Spoon","28.9 SGD","SustainableSG","Made from bamboo, a natural and renewable source, these eco-friendly and reusable spoons will bring you a step closer towards a more sustainable Singapore and a more environmentally responsible you!","Not only are these spoons made to last, they are wax-free and uncoated to keep your food away from unpleasant odours and harmful toxins. Dish out delicious meals for your loved ones while saving the environment, one stir at a time.",
+                "Wood Spoon","2200 JPY"," Bamboo spoons are a sustainable choice, as bamboo grows rapidly and requires minimal resources. This makes them an eco-friendly alternative to plastic or metal utensils. Their biodegradability also ensures a lower environmental impact, contributing positively to efforts in reducing waste and promoting sustainable living practices.","https://sustainablesg.com/products/across-the-land-bamboo-spoons","https://sustainablesg.com/products/across-the-land-bamboo-spoons",R.drawable.bamboon_spoon,R.drawable.wood_spoon,4);
+
+
+        productList.add(product1);
+    }
+
+
 
     /* Method */
     public void openShopGuide() {
