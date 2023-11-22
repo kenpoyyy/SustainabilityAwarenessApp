@@ -73,9 +73,9 @@ public class ShoppingGuidePage2 extends AppCompatActivity {
         description1.setText(getIntent().getStringExtra("DESCRIPTION1"));
         description2.setText(getIntent().getStringExtra("DESCRIPTION2"));
         int IMAGE1 = getIntent().getIntExtra("IMAGE1", 0);
-        image1.setImageAlpha(IMAGE1);
+        image1.setImageResource(IMAGE1);
         int IMAGE2 = getIntent().getIntExtra("IMAGE2", 0);
-        image2.setImageAlpha(IMAGE2);
+        image2.setImageResource(IMAGE2);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -112,15 +112,14 @@ public class ShoppingGuidePage2 extends AppCompatActivity {
         });
 
         reviews.setText(getIntent().getStringExtra("REVIEW"));
-        rating.getRating();
+        rating.setRating(getIntent().getIntExtra("RATING", 0));
 
     }
 
-
     private void addProductItem() {
         productList = new ArrayList<>(); // Initialize productList
-        ProductInfo product1 = new ProductInfo("Bamboo Spoon", "$28.90", "SustainableSG", "Made from bamboo, a natural and renewable source, these eco-friendly and reusable spoons will bring you a step closer towards a more sustainable Singapore and a more environmentally responsible you!", "Not only are these spoons made to last, they are wax-free and uncoated to keep your food away from unpleasant odours and harmful toxins. Dish out delicious meals for your loved ones while saving the environment, one stir at a time.",
-                "Wood Spoon", "$19.80", " Bamboo spoons are a sustainable choice, as bamboo grows rapidly and requires minimal resources. This makes them an eco-friendly alternative to plastic or metal utensils. Their biodegradability also ensures a lower environmental impact, contributing positively to efforts in reducing waste and promoting sustainable living practices.", "https://sustainablesg.com/products/across-the-land-bamboo-spoons", "https://sustainablesg.com/products/across-the-land-bamboo-spoons", R.drawable.bamboon_spoon, R.drawable.wood_spoon, 4);
+        ProductInfo product1 = new ProductInfo("Bamboo Spoon", "Price: $28.90", "by SustainableSG", "Made from bamboo, a natural and renewable source, these eco-friendly and reusable spoons will bring you a step closer towards a more sustainable Singapore and a more environmentally responsible you!", "Not only are these spoons made to last, they are wax-free and uncoated to keep your food away from unpleasant odours and harmful toxins. Dish out delicious meals for your loved ones while saving the environment, one stir at a time.",
+                "Wood Spoon", "$19.80", "A sustainable and eco-friendly choice! Rapid growth, minimal resources, and biodegradability make them an excellent alternative. A perfect fit for anyone embracing a green lifestyle!", "https://sustainablesg.com/products/across-the-land-bamboo-spoons", "https://sustainablesg.com/products/across-the-land-bamboo-spoons", R.drawable.bamboon_spoon, R.drawable.wood_spoon, 4);
 
 
         productList.add(product1);

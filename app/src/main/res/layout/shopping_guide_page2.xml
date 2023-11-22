@@ -49,6 +49,7 @@
         android:layout_marginStart="135dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="135dp"
+        android:background="@drawable/rounded_image_bgrd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/itemName"
@@ -74,9 +75,23 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="30dp"
+                android:textAlignment="center"
                 android:contentDescription="product details"
                 android:hint="Product Details Title 1"
                 android:fontFamily="@font/ralewaybold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/productDetails2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:textAlignment="center"
+                android:contentDescription="product details"
+                android:fontFamily="@font/ralewaylight"
+                android:hint="Product Details Title 2"
                 android:textSize="15sp" />
 
             <TextView
@@ -89,18 +104,6 @@
                 android:contentDescription="load large text"
                 android:fontFamily="@font/ralewayregular"
                 android:text="\n" />
-
-            <TextView
-                android:id="@+id/productDetails2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="30dp"
-                android:contentDescription="product details"
-                android:hint="Product Details Title 2"
-                android:textSize="15sp"
-                android:fontFamily="@font/ralewaybold" />
 
             <TextView
                 android:id="@+id/productcontent2"
@@ -161,6 +164,7 @@
                     android:layout_marginStart="135dp"
                     android:layout_marginTop="40dp"
                     android:layout_marginEnd="135dp"
+                    android:background="@drawable/rounded_image_bgrd"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -230,7 +234,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_marginTop="15dp">
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp">
 
                     <RatingBar
                         android:id="@+id/customerRating"
