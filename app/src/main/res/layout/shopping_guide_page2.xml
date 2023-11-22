@@ -124,21 +124,24 @@
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/buybtn1"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
-                    android:fontFamily="@font/ralewaybold"
+                    android:layout_marginEnd="0dp"
+                    android:layout_weight="1"
                     android:background="@drawable/greenoutlinebutton"
-                    android:text="Buy Here!" />
+                    android:fontFamily="@font/ralewaybold"
+                    android:text="Buy Here!"
+                    android:textSize="12sp" />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/signUpbtn1"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
+                    android:id="@+id/reviewbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:layout_marginStart="10dp"
+                    android:layout_marginStart="30dp"
                     android:layout_marginEnd="30dp"
+                    android:textSize="12sp"
                     android:fontFamily="@font/ralewaybold"
                     android:background="@drawable/greenoutlinebutton"
                     android:text="Review this product!" />

@@ -61,7 +61,7 @@ public class ShoppingGuidePage2 extends AppCompatActivity {
         ImageView image1 = findViewById(R.id.imageView45);
         ImageView image2 = findViewById(R.id.imageView46);
         Button button1 = findViewById(R.id.buybtn1);
-        Button button2 = findViewById(R.id.signUpbtn1);
+        Button button2 = findViewById(R.id.reviewbtn);
         RatingBar rating = findViewById(R.id.customerRating);
 
 
