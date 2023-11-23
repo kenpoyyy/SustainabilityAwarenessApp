@@ -66,7 +66,7 @@ public class ShoppingGuide extends AppCompatActivity implements SelectListener{
         productItems=new ArrayList<>();
         //add in items
         productItems.add(new ProductItem("Bamboo Spoons","SustainableSG","$28.90",R.drawable.bamboon_spoon));
-        productItems.add(new ProductItem("Bamboo Spoons","SustainableSG","$28.90",R.drawable.bamboon_spoon));
+        productItems.add(new ProductItem("Bamboo Spoons","SustainableSG","$28.90",R.drawable.food_wrap));
         productItems.add(new ProductItem("Borosilicate Glass Bottle","Your Sustainable Store","$44.90",R.drawable.borosilicate_glass_bottle));
         //few more to go
 
