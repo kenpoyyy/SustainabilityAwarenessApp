@@ -12,6 +12,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -50,12 +51,13 @@ public class LoginPage extends AppCompatActivity {
 
         eAuth=FirebaseAuth.getInstance();
 
-
         //sign in with password
         LogInEmail=findViewById(R.id.editTextText2);
         LogInPassword=findViewById(R.id.editTextTextPassword2);
         LogIn=findViewById(R.id.loginbtn);
 
+        //forgot password
+        TextView forgotPassword = findViewById(R.id.forgotpassword);
 
         //sign in with google
         btnSignInGoogle=findViewById(R.id.btnSignInGoogle);
@@ -92,6 +94,13 @@ public class LoginPage extends AppCompatActivity {
             }
         });
 
+        forgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openForgotPasswordPage();
+            }
+        });
+
 
         LogIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -121,6 +130,9 @@ public class LoginPage extends AppCompatActivity {
                         if(task.isSuccessful()){
                             Intent intent= new Intent(LoginPage.this,HomePage.class);
                             startActivity(intent);
+                        } else {
+                            // Display error message using Toast
+                            Toast.makeText(LoginPage.this, "Login failed! No user found!", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
@@ -188,4 +200,10 @@ public class LoginPage extends AppCompatActivity {
         Intent intent = new Intent(this, RegisterPage.class);
         startActivity(intent);
     }
+    //Method to open the Forgot Password activity
+    private void openForgotPasswordPage() {
+        Intent intent = new Intent(this, ForgotPasswordPage.class);
+        startActivity(intent);
+    }
+
 }
