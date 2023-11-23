@@ -48,6 +48,13 @@ public class ShoppingGuide extends AppCompatActivity implements SelectListener{
     private void addProductItem() {
         productInfo.add(new ProductInfo("Bamboo Spoon","$28.90","SustainableSG","Made from bamboo, a natural and renewable source, these eco-friendly and reusable spoons will bring you a step closer towards a more sustainable Singapore and a more environmentally responsible you!","Not only are these spoons made to last, they are wax-free and uncoated to keep your food away from unpleasant odours and harmful toxins. Dish out delicious meals for your loved ones while saving the environment, one stir at a time.",
                 "Wood Spoon","$19.80"," Bamboo spoons are a sustainable choice, as bamboo grows rapidly and requires minimal resources. This makes them an eco-friendly alternative to plastic or metal utensils. Their biodegradability also ensures a lower environmental impact, contributing positively to efforts in reducing waste and promoting sustainable living practices.","https://sustainablesg.com/products/across-the-land-bamboo-spoons","https://sustainablesg.com/products/across-the-land-bamboo-spoons",R.drawable.bamboon_spoon,R.drawable.wood_spoon,4));
+        productInfo.add(new ProductInfo("Food Warp","$28.90","SustainableSG","Made with beeswax, tree resin and plant oils, SustainableSG’s Beeswax Wraps are washable, reusable and compostable. Keep your tasty leftovers fresh without contributing to plastic wastage by using eco-friendly food wraps instead.","Reusable and cost-saving, these Beeswax life-savers are also free of harmful toxins or chemicals which might seep into your food. Committed to the sustainability of the world, we provide quality products that are safe for the customer and the environment.",
+                "Plastic Food Wrap","$18.90","Compact and efficient, this food wrap preserves freshness remarkably well. Easy to use, eco-friendly, and durable. Great for everyday use.","https://sustainablesg.com/products/mama-shop-reusable-food-wrap","https://sustainablesg.com/products/mama-shop-reusable-food-wrap",R.drawable.food_wrap,R.drawable.food_wrap2,4));
+        productInfo.add(new ProductInfo("Borosilicate Glass Bottle","$44.90","Your Sustainable Store","Made of hand blown borosilicate glass, these reusable bottles are lightweight and suitable for both hot and cold beverages. Your perfect companion to stay hydrated on-the-go! The colourful silicon sleeve provides insulation as well as a firm grip of the bottle. Every SoL bottle comes with a waterproof hemp carry bag and a cleaning brush. ","Bottle is made of hand blown borosilicate glass\n" +
+                "Colourful sleeve is made from silicon\n" +
+                "Exterior of cap is bamboo, underside is steel\n" +
+                "BPA and chemical free\n" +
+                "Dimensions: Height 24cm; Diameter 8cm (850ml capacity)","Ikea water bottle","$5.00","Great product for my everyday use and this ensures my daily intake of right amount of water as it’s big! Durable and suitable for home and even travel use! Friendly store owner that helps to deliver to where u need them!","https://yoursustainablestore.com/collections/new-in/products/glass-water-bottle","https://yoursustainablestore.com/collections/new-in/products/glass-water-bottle",R.drawable.borosilicate_glass_bottle,R.drawable.ikea_water_bottle,5));
 
     }
 
@@ -59,6 +66,8 @@ public class ShoppingGuide extends AppCompatActivity implements SelectListener{
         productItems=new ArrayList<>();
         //add in items
         productItems.add(new ProductItem("Bamboo Spoons","SustainableSG","$28.90",R.drawable.bamboon_spoon));
+        productItems.add(new ProductItem("Bamboo Spoons","SustainableSG","$28.90",R.drawable.bamboon_spoon));
+        productItems.add(new ProductItem("Borosilicate Glass Bottle","Your Sustainable Store","$44.90",R.drawable.borosilicate_glass_bottle));
         //few more to go
 
 

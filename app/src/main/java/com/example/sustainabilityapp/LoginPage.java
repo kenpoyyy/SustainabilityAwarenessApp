@@ -1,7 +1,5 @@
 package com.example.sustainabilityapp;
 
-import static androidx.constraintlayout.widget.Constraints.TAG;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -129,7 +127,6 @@ public class LoginPage extends AppCompatActivity {
 
             }
         });
-
     }
 
     int RC_SIGN_IN=40;
