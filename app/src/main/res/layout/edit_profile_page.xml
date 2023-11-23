@@ -17,8 +17,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/backleft" />
-
-    <androidx.appcompat.widget.AppCompatButton
+    
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/editprofpic"
         android:layout_width="90dp"
         android:layout_height="90dp"
@@ -31,7 +31,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
+
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/logoutbtn"

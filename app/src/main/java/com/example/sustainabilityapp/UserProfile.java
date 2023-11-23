@@ -2,7 +2,7 @@ package com.example.sustainabilityapp;
 
 public class UserProfile {
 
-    String name, email,password,phone,city;
+    String name, email,password,phone,city,profileImg;
 
     public UserProfile(String name, String email, String password, String phone, String city) {
         this.name = name;
@@ -15,6 +15,13 @@ public class UserProfile {
     public UserProfile(){
     }
 
+    public String getProfileImg() {
+        return profileImg;
+    }
+
+    public void setProfileImg(String profileImg) {
+        this.profileImg = profileImg;
+    }
 
     public String getName() {
         return name;
