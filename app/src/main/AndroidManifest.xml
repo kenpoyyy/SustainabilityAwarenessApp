@@ -15,12 +15,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SustainabilityApp"
         tools:targetApi="34">
-
+        <activity
+            android:name=".ForgotPasswordPage"
+            android:exported="false" />
         <!-- Google Maps Implementation -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAlWYi-2beaJ3I7qE_oXUavPhIn9Zy_PbQ">
-        </meta-data>
+            android:value="AIzaSyAlWYi-2beaJ3I7qE_oXUavPhIn9Zy_PbQ"></meta-data>
 
         <activity
             android:name=".EventsPage3"

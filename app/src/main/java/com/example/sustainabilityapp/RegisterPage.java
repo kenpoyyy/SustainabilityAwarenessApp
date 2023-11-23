@@ -70,28 +70,33 @@ public class RegisterPage extends AppCompatActivity {
                 String phone=editPhone.getText().toString();
                 String city=editCity.getText().toString();
 
-                if (TextUtils.isEmpty(name)){
-                    Toast.makeText(RegisterPage.this,"Enter Username",Toast.LENGTH_SHORT).show();
+                if (TextUtils.isEmpty(name) || !name.matches("^[a-zA-Z\\s]+")) {
+                    Toast.makeText(RegisterPage.this, "Enter a valid Name (only letters and spaces)", Toast.LENGTH_SHORT).show();
+                    progressDialog.dismiss();
                     return;
                 }
 
-                if (TextUtils.isEmpty(email)){
-                    Toast.makeText(RegisterPage.this,"Enter Email",Toast.LENGTH_SHORT).show();
+                if (TextUtils.isEmpty(email) || !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                    Toast.makeText(RegisterPage.this, "Enter a valid Email", Toast.LENGTH_SHORT).show();
+                    progressDialog.dismiss();
                     return;
                 }
 
-                if (TextUtils.isEmpty(city)){
-                    Toast.makeText(RegisterPage.this,"Enter City",Toast.LENGTH_SHORT).show();
+                if (TextUtils.isEmpty(city) || !city.matches("^[a-zA-Z\\s]+")) {
+                    Toast.makeText(RegisterPage.this, "Enter a valid City (only letters and spaces)", Toast.LENGTH_SHORT).show();
+                    progressDialog.dismiss();
                     return;
                 }
 
-                if (TextUtils.isEmpty(password)){
-                    Toast.makeText(RegisterPage.this,"Enter Password",Toast.LENGTH_SHORT).show();
+                if (TextUtils.isEmpty(password) || password.length() < 6) {
+                    Toast.makeText(RegisterPage.this, "Enter a valid Password (at least 6 characters)", Toast.LENGTH_SHORT).show();
+                    progressDialog.dismiss();
                     return;
                 }
 
-                if (TextUtils.isEmpty(phone)){
-                    Toast.makeText(RegisterPage.this,"Enter Phone Number",Toast.LENGTH_SHORT).show();
+                if (TextUtils.isEmpty(phone) || !android.util.Patterns.PHONE.matcher(phone).matches()) {
+                    Toast.makeText(RegisterPage.this, "Enter a valid Phone Number", Toast.LENGTH_SHORT).show();
+                    progressDialog.dismiss();
                     return;
                 }
 
