@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.util.Log;
 
 import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -63,20 +64,28 @@ public class EditProfilePage extends AppCompatActivity {
         currentUser=auth.getCurrentUser();
         databaseReference=FirebaseDatabase.getInstance().getReference();
         storage=FirebaseStorage.getInstance();
-        database.getReference().child("Users").child(FirebaseAuth.getInstance().getUid())
-                .addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        UserProfile userProfile=snapshot.getValue(UserProfile.class);
+        database = FirebaseDatabase.getInstance();
+        databaseReference.child("Users").child(FirebaseAuth.getInstance().getUid());
 
-                        Glide.with(EditProfilePage.this).load(userProfile.getProfileImg()).into(profileImg);
-                    }
+    // Add a null check for currentUser
+        if (currentUser != null) {
+            databaseReference.child("Users").child(currentUser.getUid())
+                    .addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            UserProfile userProfile = snapshot.getValue(UserProfile.class);
 
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
+                            if (userProfile != null) {
+                                Glide.with(EditProfilePage.this).load(userProfile.getProfileImg()).into(profileImg);
+                            }
+                        }
 
-                    }
-                });
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+                            Toast.makeText(EditProfilePage.this,"No user found.",Toast.LENGTH_SHORT).show();
+                        }
+                    });
+        }
 
         // Initialize UI elements from firebase
         profileImg=findViewById(R.id.editprofpic);
@@ -108,6 +117,20 @@ public class EditProfilePage extends AppCompatActivity {
             }
         });
 
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LoadUserProfile();
+            }
+        });
+
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                saveUserProfile();
+            }
+
+        });
 
         /* On Click Listener: Defines what happens when the image is clicked */
         backbtn_editpage.setOnClickListener(new View.OnClickListener() {
@@ -123,22 +146,6 @@ public class EditProfilePage extends AppCompatActivity {
                 auth.signOut();
                 openLoginPage();
             }
-        });
-
-
-        cancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                LoadUserProfile();
-            }
-        });
-
-        save.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                saveUserProfile();
-            }
-
         });
     }
 
@@ -200,15 +207,16 @@ public class EditProfilePage extends AppCompatActivity {
                     reference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                         @Override
                         public void onSuccess(Uri uri) {
+
+                            Log.d("EditProfilePage", "Uploaded image URL: " + uri.toString());
+
                             database.getReference().child("Users").child(FirebaseAuth.getInstance().getUid())
-                                    .child("profileImg").setValue(profileUri.toString());
+                                    .child("profileImg").setValue(uri.toString());
                             Toast.makeText(EditProfilePage.this,"Profile picture uploaded",Toast.LENGTH_SHORT).show();
                         }
                     });
                 }
             });
-
-
         }
     }
 

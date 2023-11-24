@@ -80,18 +80,18 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="0.0" />
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/editprofbtn"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
+        android:layout_width="62dp"
+        android:layout_height="61dp"
         android:layout_marginStart="150dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="400dp"
+        android:background="@drawable/circle_profile"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:srcCompat="@drawable/circle_profile" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
         android:id="@+id/hompage_intro_text"
