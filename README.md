@@ -16,22 +16,6 @@
 - Optimisation of UI for physical device.
 
 ---------- **!!!TODO!!!** ----------
-- All text to be put in JAVA file not in xml. (Ken)
-- Firebase (Login, Register, Events, Shopping Guide). (Zhangchi)
 
----------- **!!!NOT DONE!!!** ----------
-**Events Page**
-Reason:
-- Firebase System
-- Eventlist
-
-**Shopping Guide 2**
-Reason:
-- Firebase (Firestore) system needed.
-- This includes:
-  - Images
-  - Pricing
-  - Price Comparisons
-  - External Links or Reference (to the offical site **look at the source/reference file in GDocs**)
 
 
